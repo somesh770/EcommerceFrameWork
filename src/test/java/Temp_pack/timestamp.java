@@ -30,4 +30,14 @@ public class timestamp {
 	 return "9" + (100000000L + (long) (new Random().nextDouble() * 900000000L));
 
  }
+ 
+ 
+ @Test
+ public void replcespace()
+ {
+	 String tc = "Verify proper notification messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit".replace(" ", "_");
+	 
+	 System.out.println(tc);
+	 
+ }
 }
