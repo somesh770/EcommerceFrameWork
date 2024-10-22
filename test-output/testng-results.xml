@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-22T23:03:29 IST" name="Default suite" finished-at="2024-10-22T23:03:38 IST" duration-ms="9159">
+  <suite started-at="2024-10-22T23:26:00 IST" name="Default suite" finished-at="2024-10-22T23:26:38 IST" duration-ms="37963">
     <groups>
     </groups>
-    <test started-at="2024-10-22T23:03:29 IST" name="Default test" finished-at="2024-10-22T23:03:38 IST" duration-ms="9159">
+    <test started-at="2024-10-22T23:26:00 IST" name="Default test" finished-at="2024-10-22T23:26:38 IST" duration-ms="37963">
       <class name="Test_PACK.TC_RF_003">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_003@409bf450]" started-at="2024-10-22T23:03:29 IST" name="setUp" finished-at="2024-10-22T23:03:38 IST" duration-ms="8660" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_003@145f66e3]" started-at="2024-10-22T23:26:00 IST" name="setUp" finished-at="2024-10-22T23:26:38 IST" duration-ms="37655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyRegisteringAnAccount()[pri:0, instance:Test_PACK.TC_RF_003@409bf450]" started-at="2024-10-22T23:03:38 IST" name="verifyRegisteringAnAccount" finished-at="2024-10-22T23:03:38 IST" duration-ms="42" status="FAIL">
+        <test-method signature="verifyRegisteringAnAccount()[pri:0, instance:Test_PACK.TC_RF_003@145f66e3]" started-at="2024-10-22T23:26:38 IST" name="verifyRegisteringAnAccount" finished-at="2024-10-22T23:26:38 IST" duration-ms="40" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -20,9 +20,9 @@ from unknown error: web view not found
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a885c437aaee8ec2124ef26c5c4f0f08, findElement {value=//span[normalize-space()='My Account'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51137/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a885c437aaee8ec2124ef26c5c4f0f08]]>
+Command: [dff77ed671bf9d6708faae85ae12a9bd, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52055/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dff77ed671bf9d6708faae85ae12a9bd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -31,9 +31,9 @@ from unknown error: web view not found
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a885c437aaee8ec2124ef26c5c4f0f08, findElement {value=//span[normalize-space()='My Account'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51137/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a885c437aaee8ec2124ef26c5c4f0f08
+Command: [dff77ed671bf9d6708faae85ae12a9bd, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.58 (3a50e012e4c9..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52055/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dff77ed671bf9d6708faae85ae12a9bd
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -48,7 +48,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_003.verifyRegisteringAnAccount(TC_RF_003.java:41)
+at Test_PACK.TC_RF_003.verifyRegisteringAnAccount(TC_RF_003.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -81,7 +81,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisteringAnAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_003@409bf450]" started-at="2024-10-22T23:03:38 IST" name="tearDown" finished-at="2024-10-22T23:03:38 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_003@145f66e3]" started-at="2024-10-22T23:26:38 IST" name="tearDown" finished-at="2024-10-22T23:26:38 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
