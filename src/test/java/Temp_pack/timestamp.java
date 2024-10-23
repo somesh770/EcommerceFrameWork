@@ -35,7 +35,7 @@ public class timestamp {
  @Test
  public void replcespace()
  {
-	 String tc = "Verify proper notification messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit".replace(" ", "_");
+	 String tc = "Verify different ways of navigating to Register Account page".replace(" ", "_");
 	 
 	 System.out.println(tc);
 	 

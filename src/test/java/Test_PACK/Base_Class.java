@@ -20,12 +20,13 @@ public class Base_Class {
 
 	 
 	 
-//	 @AfterMethod
-//	    public void tearDown() {
-//	        // Close the browser after the test
-//	        if (driver != null) {
-//	            driver.quit();
-//	        }
-//	    }
+	 @AfterMethod
+	    public void tearDown() throws InterruptedException {
+	        // Close the browser after the test
+		 Thread.sleep(1000);
+	        if (driver != null) {
+	            driver.quit();
+	        }
+	    }
 
 }
