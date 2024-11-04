@@ -4,16 +4,21 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import POM_PACK.A_Navigation_bar;
+import POM_PACK.B_Registration_page;
+
 public class TC_RF_004 extends Base_Class
 {
 	@Test
 	public void Verify_proper_notification_messages_with_no_data_in_the_madetory_field()
 	{
 		 // Navigating to Register
-        driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
-        driver.findElement(By.xpath("//a[normalize-space()='Register']")).click();
+				A_Navigation_bar navbarmenu = new A_Navigation_bar(driver);
+				navbarmenu.click_NavBara_MyAccountCTA();
+				navbarmenu.click_NavBara_Register_MyAccount();
         
-        driver.findElement(By.xpath("//input[@value='Continue']")).click();
+				B_Registration_page RegistrationPG = new B_Registration_page(driver);
+				RegistrationPG.clickON_Continue();
         
         String alertmeg_for_Privacy_Policy = driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText();
         String EX_alertmeg_for_Privacy_Policy = "Warning: You must agree to the Privacy Policy!";

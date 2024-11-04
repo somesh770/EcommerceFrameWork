@@ -7,50 +7,44 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_RF_006 extends Base_Class
-{
-	public static String reusableEmail() {
-        return new Date().toString().replace(" ", "").replace(":", "") + "@gmail.com";
-    }
-    
-    public static String reusableMobile() {
-        return "9" + (100000000L + (long) (new Random().nextDouble() * 900000000L));
-    }
-    
+import POM_PACK.A_Navigation_bar;
+import POM_PACK.B_Registration_page;
+import POM_PACK.C_account_success_page;
+import POM_PACK.D_MyAccount_page;
+
+public class TC_RF_006 extends Base_Class {
+	
 	@Test
-	public void  Verify_Registering_an_Account_when_No_option_is_selected_for_Newsletter_field()
-	{
-		driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
-        driver.findElement(By.xpath("//a[normalize-space()='Register']")).click();
-        
-        // Entering user details
-        driver.findElement(By.id("input-firstname")).sendKeys("qa");
-        driver.findElement(By.id("input-lastname")).sendKeys("qa");
-        
-        String email = reusableEmail();
-        String mobile = reusableMobile();
-        
-        driver.findElement(By.id("input-email")).sendKeys(email);
-        driver.findElement(By.id("input-telephone")).sendKeys(mobile);
-        
-        System.out.println("Email: " + email);
-        System.out.println("Mobile: " + mobile);
-        
-        driver.findElement(By.id("input-password")).sendKeys("Test@123");
-        driver.findElement(By.id("input-confirm")).sendKeys("Test@123");
-        
-        // Submitting form
-        driver.findElement(By.xpath("//input[@value='0']")).click();
-        driver.findElement(By.xpath("//input[@name='agree']")).click();
-        driver.findElement(By.xpath("//input[@value='Continue']")).click();
-        
-        driver.findElement(By.linkText("Continue")).click();
-        
-        driver.findElement(By.linkText("Subscribe / unsubscribe to newsletter")).click();
-        
-        boolean Newsletter_NO = driver.findElement(By.xpath("//input[@value='0']")).isSelected();
-        
-        Assert.assertEquals(Newsletter_NO, true);
+	public void Verify_Registering_an_Account_when_No_option_is_selected_for_Newsletter_field() {
+
+		// Navigating to Register
+		A_Navigation_bar navbarmenu = new A_Navigation_bar(driver);
+		navbarmenu.click_NavBara_MyAccountCTA();
+		navbarmenu.click_NavBara_Register_MyAccount();
+
+		// Entering user details
+		B_Registration_page RegistrationPG = new B_Registration_page(driver);
+
+		RegistrationPG.Send_FirstName();
+		RegistrationPG.Send_LastName();
+		RegistrationPG.Send_Email();
+		RegistrationPG.Send_Mobile();
+		RegistrationPG.printstatment();
+		RegistrationPG.Send_password();
+		RegistrationPG.Send_ConfirmPassword();
+		RegistrationPG.select_SubscribeRadio_NO();
+		RegistrationPG.Select_disclaimer();
+		RegistrationPG.clickON_Continue();
+
+		C_account_success_page accsuccessPG = new C_account_success_page(driver);
+
+		accsuccessPG.click_ucc_ContinueCTA();
+
+		D_MyAccount_page myAcpage = new D_MyAccount_page(driver);
+		myAcpage.click_MyAC_subsscribe_Opn();
+		boolean Newsletter_NO = driver.findElement(By.xpath("//input[@value='0']")).isSelected();
+
+		Assert.assertEquals(Newsletter_NO, true);
 	}
 
 }
