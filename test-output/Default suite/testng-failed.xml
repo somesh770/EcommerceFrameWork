@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_PACK.TC_RF_007">
+      <class name="Temp_pack.Login">
         <methods>
-          <include name="Verify__navigating_to_Register_Account_page_via_Login_page_NEW_Customer"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="User02_email02_20hits"/>
+          <include name="User01_email01_20hits"/>
         </methods>
-      </class> <!-- Test_PACK.TC_RF_007 -->
+      </class> <!-- Temp_pack.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
