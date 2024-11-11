@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Temp_pack.Login">
+      <class name="Test_PACK.TC_RF_010">
         <methods>
-          <include name="User02_email02_20hits"/>
-          <include name="User01_email01_20hits"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- Temp_pack.Login -->
+      </class> <!-- Test_PACK.TC_RF_010 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

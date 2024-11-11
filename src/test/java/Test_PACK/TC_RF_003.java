@@ -31,8 +31,10 @@ public class TC_RF_003 extends Base_Class {
 
 		RegistrationPG.Send_FirstName();
 		RegistrationPG.Send_LastName();
-		RegistrationPG.Send_Email();
-		RegistrationPG.Send_Mobile();
+		
+		String email = RegistrationPG.Send_Email();
+		String mobile = RegistrationPG.Send_Mobile();
+		
 		RegistrationPG.printstatment();
 		RegistrationPG.Send_password();
 		RegistrationPG.Send_ConfirmPassword();

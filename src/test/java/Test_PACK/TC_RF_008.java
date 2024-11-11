@@ -1,23 +1,17 @@
 package Test_PACK;
 
-import java.util.Date;
-import java.util.Random;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import POM_PACK.A_Navigation_bar;
 import POM_PACK.B_Registration_page;
-import POM_PACK.C_account_success_page;
-import POM_PACK.D_MyAccount_page;
 
-public class TC_RF_006 extends Base_Class {
-	
+public class TC_RF_008 extends Base_Class
+{
 	@Test
-	public void Verify_Registering_an_Account_when_No_option_is_selected_for_Newsletter_field() {
-
-		// Navigating to Register
+	public void Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields()
+	{
 		A_Navigation_bar navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
@@ -29,22 +23,22 @@ public class TC_RF_006 extends Base_Class {
 		RegistrationPG.Send_LastName();
 		String email = RegistrationPG.Send_Email();
 		String mobile = RegistrationPG.Send_Mobile();
-		RegistrationPG.printstatment();
+		RegistrationPG.printstatment();		
 		RegistrationPG.Send_password();
-		RegistrationPG.Send_ConfirmPassword();
+		RegistrationPG.Send_ConfirmPassword();   // send Test@123 password 
+		
+		driver.findElement(By.id("input-confirm")).sendKeys("1234"); // Send 1234 in confirm password
+		
 		RegistrationPG.select_SubscribeRadio_NO();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-
-		C_account_success_page accsuccessPG = new C_account_success_page(driver);
-
-		accsuccessPG.click_ucc_ContinueCTA();
-
-		D_MyAccount_page myAcpage = new D_MyAccount_page(driver);
-		myAcpage.click_MyAC_subsscribe_Opn();
-		boolean Newsletter_NO = driver.findElement(By.xpath("//input[@value='0']")).isSelected();
-
-		Assert.assertEquals(Newsletter_NO, true);
+		
+		String Expectedmessage= "Password confirmation does not match password!";
+		
+		String Actualmessgae = driver.findElement(By.xpath("//div[@class='text-danger']")).getText();
+		
+		Assert.assertEquals(Actualmessgae, Expectedmessage);
+		
 	}
 
 }

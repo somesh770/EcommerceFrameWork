@@ -8,21 +8,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Utility_PACK.Reusable_details;
+
 public class C_account_success_page {
 	private WebDriver driver;
+	private String email;
+	private String mobile;
 
-	public static String reusableEmail() {
-		return new Date().toString().replace(" ", "").replace(":", "") + "@gmail.com";
-	}
-
-	public static String reusableMobile() {
-		return "9" + (100000000L + (long) (new Random().nextDouble() * 900000000L));
-	}
+	
 
 	// Constructor
 	public C_account_success_page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.email = Reusable_details.reusableEmail();
+		this.mobile = Reusable_details.reusableMobile();
 	}
 //----------------------------------------------------------------------
 	

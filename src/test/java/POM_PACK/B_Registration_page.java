@@ -9,21 +9,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import Utility_PACK.Reusable_details;
+
 public class B_Registration_page {
 	private WebDriver driver;
-
-	public static String reusableEmail() {
-		return new Date().toString().replace(" ", "").replace(":", "") + "@gmail.com";
-	}
-
-	public static String reusableMobile() {
-		return "9" + (100000000L + (long) (new Random().nextDouble() * 900000000L));
-	}
+	private String email;
+	private String mobile;
+	
 
 	// Constructor
 	public B_Registration_page(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		
+		this.email = Reusable_details.reusableEmail();
+		this.mobile = Reusable_details.reusableMobile();
 	}
 
 //=================================================================
@@ -45,8 +45,8 @@ public class B_Registration_page {
 	}
 
 //------------------------------------------------------	
-	String email = reusableEmail();
-	String mobile = reusableMobile();
+//	String email = reusableEmail();
+//	String mobile = reusableMobile();
 
 	@FindBy(id = "input-email")
 	private WebElement Email;
@@ -55,11 +55,7 @@ public class B_Registration_page {
 		Email.sendKeys(email);
 		return email;
 	}
-
-	public void printstatment() {
-		System.out.println("Email - " + email);
-		System.out.println("Mobile - " + mobile);
-	}
+	
 
 //------------------------------------------------------------
 	@FindBy(id = "input-telephone")
@@ -70,6 +66,11 @@ public class B_Registration_page {
 		return mobile;
 	}
 
+	public void printstatment() {
+		System.out.println("Email - " + email);
+		System.out.println("Mobile - " + mobile);
+	}
+	
 	// ---------------------------------------------------------------------------
 	@FindBy(id = "input-password")
 	private WebElement password;
@@ -117,5 +118,14 @@ public class B_Registration_page {
 		Continue.click();
 	}
 //------------------------------------------------------------		
+
+	public void setEmail(String invalidEmail) {
+		this.email = email;
+	    Email.clear();
+	    Email.sendKeys(email);
+		
+	}
+
+	
 
 }
