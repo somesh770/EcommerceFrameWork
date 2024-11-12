@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T17:12:49 IST" name="Default suite" finished-at="2024-11-11T17:13:18 IST" duration-ms="28574">
+  <suite started-at="2024-11-11T20:05:59 IST" name="Default suite" finished-at="2024-11-11T20:06:08 IST" duration-ms="9688">
     <groups>
     </groups>
-    <test started-at="2024-11-11T17:12:49 IST" name="Default test" finished-at="2024-11-11T17:13:18 IST" duration-ms="28574">
-      <class name="Test_PACK.TC_RF_010">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:12:49 IST" name="setUp" finished-at="2024-11-11T17:12:55 IST" duration-ms="5708" status="PASS">
+    <test started-at="2024-11-11T20:05:59 IST" name="Default test" finished-at="2024-11-11T20:06:08 IST" duration-ms="9688">
+      <class name="Test_PACK.TC_RF_012">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:05:59 IST" name="setUp" finished-at="2024-11-11T20:06:03 IST" duration-ms="4225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidEmail_1()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:12:55 IST" name="invalidEmail_1" finished-at="2024-11-11T17:12:56 IST" duration-ms="1608" status="PASS">
+        <test-method signature="Verify_Registering_Account_by_using_Keyboard_keys()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:06:03 IST" name="Verify_Registering_Account_by_using_Keyboard_keys" finished-at="2024-11-11T20:06:07 IST" duration-ms="4027" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidEmail_1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:12:56 IST" name="tearDown" finished-at="2024-11-11T17:12:58 IST" duration-ms="1275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:12:58 IST" name="setUp" finished-at="2024-11-11T17:13:01 IST" duration-ms="3702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="invalidEmail_2()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:01 IST" name="invalidEmail_2" finished-at="2024-11-11T17:13:03 IST" duration-ms="2047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmail_2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:03 IST" name="tearDown" finished-at="2024-11-11T17:13:05 IST" duration-ms="1307" status="PASS">
+        </test-method> <!-- Verify_Registering_Account_by_using_Keyboard_keys -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:06:07 IST" name="tearDown" finished-at="2024-11-11T20:06:08 IST" duration-ms="1383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:05 IST" name="setUp" finished-at="2024-11-11T17:13:08 IST" duration-ms="3091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="invalidEmail_3()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:08 IST" name="invalidEmail_3" finished-at="2024-11-11T17:13:10 IST" duration-ms="2187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmail_3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:10 IST" name="tearDown" finished-at="2024-11-11T17:13:11 IST" duration-ms="1277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:11 IST" name="setUp" finished-at="2024-11-11T17:13:15 IST" duration-ms="3251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="invalidEmail_4()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:15 IST" name="invalidEmail_4" finished-at="2024-11-11T17:13:16 IST" duration-ms="1757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidEmail_4 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_010@2a3b5b47]" started-at="2024-11-11T17:13:16 IST" name="tearDown" finished-at="2024-11-11T17:13:18 IST" duration-ms="1299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test_PACK.TC_RF_010 -->
+      </class> <!-- Test_PACK.TC_RF_012 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
