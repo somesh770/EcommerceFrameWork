@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T20:05:59 IST" name="Default suite" finished-at="2024-11-11T20:06:08 IST" duration-ms="9688">
+  <suite started-at="2024-11-24T14:12:40 IST" name="Default suite" finished-at="2024-11-24T14:12:44 IST" duration-ms="3959">
     <groups>
     </groups>
-    <test started-at="2024-11-11T20:05:59 IST" name="Default test" finished-at="2024-11-11T20:06:08 IST" duration-ms="9688">
-      <class name="Test_PACK.TC_RF_012">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:05:59 IST" name="setUp" finished-at="2024-11-11T20:06:03 IST" duration-ms="4225" status="PASS">
+    <test started-at="2024-11-24T14:12:40 IST" name="Default test" finished-at="2024-11-24T14:12:44 IST" duration-ms="3959">
+      <class name="Test_PACK.TC_RF_013">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_013@35d019a3]" started-at="2024-11-24T14:12:40 IST" name="setUp" finished-at="2024-11-24T14:12:42 IST" duration-ms="2202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Registering_Account_by_using_Keyboard_keys()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:06:03 IST" name="Verify_Registering_Account_by_using_Keyboard_keys" finished-at="2024-11-11T20:06:07 IST" duration-ms="4027" status="PASS">
+        <test-method signature="Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders()[pri:0, instance:Test_PACK.TC_RF_013@35d019a3]" started-at="2024-11-24T14:12:42 IST" name="Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders" finished-at="2024-11-24T14:12:43 IST" duration-ms="558" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Registering_Account_by_using_Keyboard_keys -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_012@35d019a3]" started-at="2024-11-11T20:06:07 IST" name="tearDown" finished-at="2024-11-11T20:06:08 IST" duration-ms="1383" status="PASS">
+        </test-method> <!-- Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_013@35d019a3]" started-at="2024-11-24T14:12:43 IST" name="tearDown" finished-at="2024-11-24T14:12:44 IST" duration-ms="1174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Test_PACK.TC_RF_012 -->
+      </class> <!-- Test_PACK.TC_RF_013 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
