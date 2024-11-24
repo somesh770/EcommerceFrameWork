@@ -21,7 +21,7 @@ public class TC_RF_013 extends Base_Class
 				String email = "E-Mail";
 				String telephine = "Telephone";
 				String password = "Password";
-				String Confirmpassword = "Password Confirm";
+				String Confirmpassword = "Password Confir";
 				
 				Assert.assertEquals(driver.findElement(By.id("input-firstname")).getAttribute("placeholder"), firstname);
 				Assert.assertEquals(driver.findElement(By.id("input-lastname")).getAttribute("placeholder"), lastanme);
