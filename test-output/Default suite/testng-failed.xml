@@ -3,6 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="Test_PACK.TC_RF_011">
+        <methods>
+          <include name="Verify_Registering_Account_by_providing_invalid_phone_number_abcde"/>
+          <include name="Verify_Registering_Account_by_providing_invalid_phone_number_111"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Test_PACK.TC_RF_011 -->
       <class name="Test_PACK.TC_RF_013">
         <methods>
           <include name="tearDown"/>
