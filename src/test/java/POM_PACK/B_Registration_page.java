@@ -125,7 +125,93 @@ public class B_Registration_page {
 	    Email.sendKeys(email);
 		
 	}
-
+//-----------------------------------------------------------------
+	@FindBy(xpath="//a[normalize-space()='login page']")
+	private WebElement Header_loginhyperlink;
+	public void click_Header_loginhyperlink() {
+		Header_loginhyperlink.click();
+	}
+	
+//----------------------------------------------------------------	
+	// rightside menu bar
+	
+		@FindBy(xpath="//a[@class='list-group-item'][1]")
+		private WebElement register_rightbar_login;
+		public void click_register_rightbar_login() {
+			register_rightbar_login.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][2]")
+		private WebElement register_rightbar_register;
+		public void click_register_rightbar_register() {
+			register_rightbar_register.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][3]")
+		private WebElement register_rightbar_forgotpass;
+		public void click_register_rightbar_forgotpass() {
+			register_rightbar_forgotpass.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][4]")
+		private WebElement register_rightbar_myAC;
+		public void click_register_rightbar_myAC() {
+			register_rightbar_myAC.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][5]")
+		private WebElement register_rightbar_addressbook;
+		public void click_register_rightbar_addressbook() {
+			register_rightbar_addressbook.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][6]")
+		private WebElement register_rightbar_wishlist;
+		public void click_register_rightbar_wishlist() {
+			register_rightbar_wishlist.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][7]")
+		private WebElement register_rightbar_orderHistory;
+		public void click_register_rightbar_orderHistory() {
+			register_rightbar_orderHistory.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][8]")
+		private WebElement register_rightbar_Download;
+		public void click_register_rightbar_Download() {
+			register_rightbar_Download.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][9]")
+		private WebElement register_rightbar_RecurrinhPaymnet;
+		public void click_register_rightbar_RecurrinhPaymnet() {
+			register_rightbar_RecurrinhPaymnet.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][10]")
+		private WebElement register_rightbar_rewardPoint;
+		public void click_register_rightbar_rewardPoint() {
+			register_rightbar_rewardPoint.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][11]")
+		private WebElement register_rightbar_Return;
+		public void click_register_rightbar_Return() {
+			register_rightbar_rewardPoint.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][12]")
+		private WebElement register_rightbar_Transaction;
+		public void click_register_rightbar_Transaction() {
+			register_rightbar_Transaction.click();
+		}
+		
+		@FindBy(xpath="//a[@class='list-group-item'][13]")
+		private WebElement register_rightbar_newsletter;
+		public void click_register_rightbar_newsletter() {
+			register_rightbar_newsletter.click();
+		}
 	
 
 }

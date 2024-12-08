@@ -3,11 +3,19 @@
   <groupId>QA_FOX_LIVE_project</groupId>
   <artifactId>QA_FOX_LIVE_project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+
   <dependencies>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.25.0</version>
+    
+    
 </dependency>
 
 
