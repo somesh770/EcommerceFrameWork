@@ -147,13 +147,13 @@ public class B_Registration_page {
 			register_rightbar_register.click();
 		}
 		
-		@FindBy(xpath="//a[@class='list-group-item'][3]")
+		@FindBy(xpath="//a[normalize-space()='Forgotten Password']")
 		private WebElement register_rightbar_forgotpass;
 		public void click_register_rightbar_forgotpass() {
 			register_rightbar_forgotpass.click();
 		}
 		
-		@FindBy(xpath="//a[@class='list-group-item'][4]")
+		@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='My Account']")
 		private WebElement register_rightbar_myAC;
 		public void click_register_rightbar_myAC() {
 			register_rightbar_myAC.click();
