@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Default suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="Test_PACK.Registration">
+        <methods>
+          <include name="TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed"/>
+          <include name="TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" invocation-numbers="1 2 3 4 5"/>
+          <include name="TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number_111"/>
+        </methods>
+      </class> <!-- Test_PACK.Registration -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

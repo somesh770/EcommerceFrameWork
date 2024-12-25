@@ -1,0 +1,712 @@
+<html>
+<head>
+<title>TestNG:  Default test(failed)(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test(failed)(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 22 22:15:41 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>391 seconds (391459 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: ABCD456#</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c5790032-e1fc-48c9-8f1c-90535ae1a3e4, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:20227, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10184, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:20227/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: c5790032-e1fc-48c9-8f1c-90535ae1a3e4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089786414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089786414'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c5790032-e1fc-48c9-8f1c-90535ae1a3e4, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:20227, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10184, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:20227/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: c5790032-e1fc-48c9-8f1c-90535ae1a3e4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database()'><b>TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database</b><br>Test class: Test_PACK.Registration</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #input\-newsletter
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [94f6e353-7bd2-4ac6-bb09-7a3711cddec5, findElement {value=input-newsletter, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:41278, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10828, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:41278/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 94f6e353-7bd2-4ac6-bb09-7a3711cddec5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(Registration.java:617)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293252487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293252487'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #input\-newsletter
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [94f6e353-7bd2-4ac6-bb09-7a3711cddec5, findElement {value=input-newsletter, using=id}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:41278, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10828, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:41278/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 94f6e353-7bd2-4ac6-bb09-7a3711cddec5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(Registration.java:617)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcd123$</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b8eb9e09-230d-4f53-839a-e46f94ff196b, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:46641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20184, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:46641/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: b8eb9e09-230d-4f53-839a-e46f94ff196b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252713736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252713736'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [b8eb9e09-230d-4f53-839a-e46f94ff196b, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:46641, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20184, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:46641/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: b8eb9e09-230d-4f53-839a-e46f94ff196b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcdefghi</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6e6399d2-5d00-4403-845b-095d21fa2918, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:3910, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10968, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:3910/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6e6399d2-5d00-4403-845b-095d21fa2918
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2053349061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2053349061'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6e6399d2-5d00-4403-845b-095d21fa2918, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:3910, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10968, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:3910/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6e6399d2-5d00-4403-845b-095d21fa2918
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number_111()'><b>TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number_111</b><br>Test class: Test_PACK.Registration</td>
+<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number_111(Registration.java:512)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1998137093", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1998137093'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number_111(Registration.java:512)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed()'><b>TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed</b><br>Test class: Test_PACK.Registration</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[normalize-space()=&apos;Continue&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [03230bfb-97d5-454f-a90b-d76cbc472839, findElement {value=//a[normalize-space()=&apos;Continue&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:7096, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25588, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:7096/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 03230bfb-97d5-454f-a90b-d76cbc472839
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(Registration.java:773)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace939829672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace939829672'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[normalize-space()=&apos;Continue&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [03230bfb-97d5-454f-a90b-d76cbc472839, findElement {value=//a[normalize-space()=&apos;Continue&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:7096, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25588, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:7096/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 03230bfb-97d5-454f-a90b-d76cbc472839
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(Registration.java:773)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: 12345</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dfe9804d-99bf-4a2f-a7b6-248558a6c32e, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:35820, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25700, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35820/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: dfe9804d-99bf-4a2f-a7b6-248558a6c32e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace948424584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace948424584'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dfe9804d-99bf-4a2f-a7b6-248558a6c32e, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:35820, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25700, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35820/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: dfe9804d-99bf-4a2f-a7b6-248558a6c32e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcd1234</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [87872656-5f8b-4885-ae5b-c2295253cf1b, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:28181, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3568, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28181/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 87872656-5f8b-4885-ae5b-c2295253cf1b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131301148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131301148'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [87872656-5f8b-4885-ae5b-c2295253cf1b, findElement {value=//div[@class=&apos;text-danger&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:debuggerAddress: 127.0.0.1:28181, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3568, moz:profile: C:\Users\somes\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:28181/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 87872656-5f8b-4885-ae5b-c2295253cf1b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments()'><b>TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</b><br>Test class: Test_PACK.Registration<br>Parameters: Firefox</td>
+<td></td>
+<td>10</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()'><b>TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>14</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage()'><b>TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option()'><b>TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments()'><b>TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</b><br>Test class: Test_PACK.Registration<br>Parameters: Edge</td>
+<td></td>
+<td>11</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field()'><b>TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_026_Verify_the_UI_of_Register_Account_page()'><b>TC_RF_026_Verify_the_UI_of_Register_Account_page</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments()'><b>TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</b><br>Test class: Test_PACK.Registration<br>Parameters: chrome</td>
+<td></td>
+<td>9</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default()'><b>TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+<tr>
+<td title='Test_PACK.Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility()'><b>TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility</b><br>Test class: Test_PACK.Registration</td>
+<td></td>
+<td>0</td>
+<td>Test_PACK.Registration@411f53a0</td></tr>
+</table><p>
+</body>
+</html>

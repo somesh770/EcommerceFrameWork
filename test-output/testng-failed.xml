@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_PACK.TC_RF_017">
+      <class name="Test_PACK.Registration">
         <methods>
+          <include name="TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database"/>
           <include name="tearDown"/>
-          <include name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" invocation-numbers="1 2 3 4 5"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Test_PACK.TC_RF_017 -->
+      </class> <!-- Test_PACK.Registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

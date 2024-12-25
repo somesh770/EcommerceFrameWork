@@ -1,65 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="25" total="26" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-14T23:55:11 IST" name="Default suite" finished-at="2024-12-14T23:57:24 IST" duration-ms="132331">
+  <suite started-at="2024-12-25T18:22:05 IST" name="Default suite" finished-at="2024-12-25T18:22:24 IST" duration-ms="19425">
     <groups>
     </groups>
-    <test started-at="2024-12-14T23:55:11 IST" name="Default test" finished-at="2024-12-14T23:57:24 IST" duration-ms="132331">
-      <class name="Test_PACK.TC_RF_017">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:12 IST" name="setUp" finished-at="2024-12-14T23:55:20 IST" duration-ms="8959" status="PASS">
+    <test started-at="2024-12-25T18:22:05 IST" name="Default test" finished-at="2024-12-25T18:22:24 IST" duration-ms="19425">
+      <class name="Test_PACK.Registration">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.Registration@2b71e916]" started-at="2024-12-25T18:22:05 IST" name="setUp" finished-at="2024-12-25T18:22:13 IST" duration-ms="7952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:20 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:55:24 IST" duration-ms="3427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:24 IST" name="tearDown" finished-at="2024-12-14T23:55:26 IST" duration-ms="2539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:26 IST" name="setUp" finished-at="2024-12-14T23:55:31 IST" duration-ms="4357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:31 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:55:44 IST" duration-ms="12869" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database()[pri:15, instance:Test_PACK.Registration@2b71e916]" started-at="2024-12-25T18:22:13 IST" name="TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database" finished-at="2024-12-25T18:22:24 IST" duration-ms="10951" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input\-newsletter"}
+  (Session info: chrome=131.0.6778.205)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c3bbd386acd77e594c064554a3d4e110, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51803}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51803/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3bbd386acd77e594c064554a3d4e110]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71d62a554df1e37189253fb29d0080a2, findElement {value=input-newsletter, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64448/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d62a554df1e37189253fb29d0080a2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-newsletter"}
+  (Session info: chrome=131.0.6778.205)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c3bbd386acd77e594c064554a3d4e110, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51803}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51803/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3bbd386acd77e594c064554a3d4e110
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71d62a554df1e37189253fb29d0080a2, findElement {value=input-newsletter, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\somes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64448}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64448/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d62a554df1e37189253fb29d0080a2
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -74,7 +48,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_017.Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(TC_RF_017.java:34)
+at Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(Registration.java:529)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -106,352 +80,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:44 IST" name="tearDown" finished-at="2024-12-14T23:55:46 IST" duration-ms="2573" status="PASS">
+        </test-method> <!-- TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.Registration@2b71e916]" started-at="2024-12-25T18:22:24 IST" name="tearDown" finished-at="2024-12-25T18:22:24 IST" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:46 IST" name="setUp" finished-at="2024-12-14T23:55:52 IST" duration-ms="5762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:55:52 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:56:06 IST" duration-ms="13489" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcdefghi]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [313055d4258772a6f567c76f5476579d, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51870}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313055d4258772a6f567c76f5476579d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [313055d4258772a6f567c76f5476579d, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51870}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51870/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 313055d4258772a6f567c76f5476579d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_017.Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(TC_RF_017.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:06 IST" name="tearDown" finished-at="2024-12-14T23:56:08 IST" duration-ms="2534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:08 IST" name="setUp" finished-at="2024-12-14T23:56:22 IST" duration-ms="14432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:22 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:56:37 IST" duration-ms="14336" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcd1234]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ce6ffee8488b1e5e49400b4b532fef3a, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51926}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51926/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ce6ffee8488b1e5e49400b4b532fef3a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ce6ffee8488b1e5e49400b4b532fef3a, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51926}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51926/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ce6ffee8488b1e5e49400b4b532fef3a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_017.Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(TC_RF_017.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:37 IST" name="tearDown" finished-at="2024-12-14T23:56:39 IST" duration-ms="2522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:39 IST" name="setUp" finished-at="2024-12-14T23:56:45 IST" duration-ms="5247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:45 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:56:58 IST" duration-ms="13713" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcd123$]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [13f7c7e3926d774ff44362c19b13e007, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51988}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51988/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 13f7c7e3926d774ff44362c19b13e007]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [13f7c7e3926d774ff44362c19b13e007, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51988}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51988/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 13f7c7e3926d774ff44362c19b13e007
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_017.Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(TC_RF_017.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:56:58 IST" name="tearDown" finished-at="2024-12-14T23:57:01 IST" duration-ms="2530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:57:01 IST" name="setUp" finished-at="2024-12-14T23:57:08 IST" duration-ms="7113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(java.lang.String)[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:57:08 IST" name="Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards" data-provider="passwordcomplixitycheck" finished-at="2024-12-14T23:57:21 IST" duration-ms="13246" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ABCD456#]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [adef0d415746b4c5e8728c0f01b60deb, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52043}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52043/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: adef0d415746b4c5e8728c0f01b60deb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='text-danger']"}
-  (Session info: MicrosoftEdge=131.0.2903.99)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [adef0d415746b4c5e8728c0f01b60deb, findElement {using=xpath, value=//div[@class='text-danger']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.99, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52043}, msedge: {msedgedriverVersion: 131.0.2903.99 (f96a870b1316..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52043/devtoo..., se:cdpVersion: 131.0.2903.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: adef0d415746b4c5e8728c0f01b60deb
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Test_PACK.TC_RF_017.Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(TC_RF_017.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test_PACK.TC_RF_017@55182842]" started-at="2024-12-14T23:57:21 IST" name="tearDown" finished-at="2024-12-14T23:57:24 IST" duration-ms="2599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test_PACK.TC_RF_017 -->
+      </class> <!-- Test_PACK.Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

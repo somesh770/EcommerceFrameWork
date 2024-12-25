@@ -15,8 +15,6 @@ public class C_account_success_page {
 	private String email;
 	private String mobile;
 
-	
-
 	// Constructor
 	public C_account_success_page(WebDriver driver) {
 		this.driver = driver;
@@ -24,14 +22,22 @@ public class C_account_success_page {
 		this.email = Reusable_details.reusableEmail();
 		this.mobile = Reusable_details.reusableMobile();
 	}
-//----------------------------------------------------------------------
-	
-	@FindBy(xpath="//a[normalize-space()='Continue']")
+//=========================================================================
+
+	@FindBy(xpath = "//a[normalize-space()='Continue']")
 	WebElement succ_ContinueCTA;
+
+	@FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
+	WebElement successMesssageOnAccountPage;
 	
-	public void click_ucc_ContinueCTA()
-	{
+//============================================================================================
+
+	public void click_ucc_ContinueCTA() {
 		succ_ContinueCTA.click();
 	}
-	
+
+	public String GetTest_Success_messgae_on_Accountpage() {
+		return successMesssageOnAccountPage.getText();
+	}
+
 }
