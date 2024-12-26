@@ -44,13 +44,14 @@ public class Registration {
 
 	public static WebDriver driver;
 	static SoftAssert Softass = new SoftAssert();
-	A_Navigation_bar navbarmenu;
+
+	static A_Navigation_bar navbarmenu;
 	static B_Registration_page RegistrationPG;
-	C_account_success_page AccountSuccessPage;
-	D_RHS_Menu_bar RHS_Menu_bar;
-	D_MyAccount_page myAcpage;
-	E_account_newsletter NewsLetterpage;
-	F_LoginPage loginpage;
+	static C_account_success_page AccountSuccessPage;
+	static D_RHS_Menu_bar RHS_Menu_bar;
+	static D_MyAccount_page myAcpage;
+	static E_account_newsletter NewsLetterpage;
+	static F_LoginPage loginpage;
 
 	@BeforeMethod()
 	public void setUp() {
@@ -243,7 +244,6 @@ public class Registration {
 	public void TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES() throws InterruptedException {
 
 		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG = new B_Registration_page(driver);
 		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
 		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
@@ -340,6 +340,7 @@ public class Registration {
 		Softass.assertAll();
 
 	}
+
 //============================================================================================================
 	@Test(priority = 9)
 	public void TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details() {
@@ -491,6 +492,9 @@ public class Registration {
 	@Test(priority = 14)
 	public static void TC_RF_014_Verify_all_mandatory_fields_in_Register_Account() {
 
+		String expectedContent = "\"* \"";
+		String expectedColor = "rgb(255, 0, 0)";
+
 		WebElement firstname = driver.findElement(By.cssSelector("label[for='input-firstname']"));
 
 		JavascriptExecutor jsee = (JavascriptExecutor) driver;
@@ -498,11 +502,13 @@ public class Registration {
 		String ashstrictFN = (String) jsee.executeScript(
 				"return window.getComputedStyle(arguments[0],'::before').getPropertyValue('content','color');",
 				firstname);
-		System.out.println("mandetory mark on first name field:" + ashstrictFN);
 
 		String ashstrictcolorFN = (String) jsee.executeScript(
 				"return window.getComputedStyle(arguments[0],'::before').getPropertyValue('color');", firstname);
-		System.out.println("Color of the firstname label:" + ashstrictcolorFN);
+
+		Softass.assertEquals(ashstrictFN, expectedContent);
+		Softass.assertEquals(ashstrictcolorFN, expectedColor);
+
 		Softass.assertAll();
 
 	}
@@ -510,7 +516,7 @@ public class Registration {
 
 	@Test(priority = 15)
 	public void TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database() {
-		
+
 		String enteredFirstNameData = "Arun";
 		driver.findElement(By.id("input-firstname")).sendKeys(enteredFirstNameData);
 
