@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_PACK.Registration">
         <methods>
-          <include name="TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database"/>
+          <include name="TC_RF_014_Verify_all_mandatory_fields_in_Register_Account"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

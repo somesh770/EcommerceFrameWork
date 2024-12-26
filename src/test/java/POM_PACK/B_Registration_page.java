@@ -90,8 +90,13 @@ public class B_Registration_page {
 
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
 	WebElement Worninginvalidemail04;
+	
+	// CSS properties
+	
+
 //===============================================================================================
 
+	
 	public String Get_Worning_Emailexits() {
 		return Worning_Emailexits.getText();
 
