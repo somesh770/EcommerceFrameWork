@@ -15,7 +15,7 @@ public class D_RHS_Menu_bar {
 
 //-------------------------------------------------------------------------------	
 	@FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Logout']")
-	WebElement LoginOut_RHSmenu;
+	private WebElement LoginOut_RHSmenu;
 
 	@FindBy(xpath = "//a[@class='list-group-item'][1]")
 	private WebElement register_rightbar_login;
@@ -57,7 +57,7 @@ public class D_RHS_Menu_bar {
 	private WebElement register_rightbar_newsletter;
 
 //==================================================================================================
-
+	
 	public void click_register_rightbar_login() {
 		register_rightbar_login.click();
 	}

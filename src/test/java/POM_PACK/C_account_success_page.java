@@ -25,10 +25,10 @@ public class C_account_success_page {
 //=========================================================================
 
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
-	WebElement succ_ContinueCTA;
+	private WebElement succ_ContinueCTA;
 
 	@FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
-	WebElement successMesssageOnAccountPage;
+	private WebElement successMesssageOnAccountPage;
 	
 //============================================================================================
 
@@ -38,6 +38,10 @@ public class C_account_success_page {
 
 	public String GetTest_Success_messgae_on_Accountpage() {
 		return successMesssageOnAccountPage.getText();
+	}
+	
+	public boolean IsDisply_Success_messgae_on_Accountpage() {
+		return successMesssageOnAccountPage.isDisplayed();
 	}
 
 }

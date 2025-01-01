@@ -36,6 +36,7 @@ import POM_PACK.D_MyAccount_page;
 import POM_PACK.D_RHS_Menu_bar;
 import POM_PACK.E_account_newsletter;
 import POM_PACK.F_LoginPage;
+import POM_PACK.G_Account_EditPage;
 import Utility_PACK.PropertyFileUtil;
 import Utility_PACK.Reusable_details;
 import Utility_PACK.TakeScreenshotClass;
@@ -52,6 +53,7 @@ public class Registration {
 	static D_MyAccount_page myAcpage;
 	static E_account_newsletter NewsLetterpage;
 	static F_LoginPage loginpage;
+	static G_Account_EditPage MyAC_Editpage;
 
 	@BeforeMethod()
 	public void setUp() {
@@ -516,25 +518,21 @@ public class Registration {
 
 	@Test(priority = 15)
 	public void TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database() {
-
-		String enteredFirstNameData = "Arun";
-		driver.findElement(By.id("input-firstname")).sendKeys(enteredFirstNameData);
-
-		String enteredLastNameData = "Motoori";
-		driver.findElement(By.id("input-lastname")).sendKeys(enteredLastNameData);
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
+		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
 
 		String enteredEmailData = Reusable_details.reusableEmail();
-		driver.findElement(By.id("input-email")).sendKeys(enteredEmailData);
+		RegistrationPG.Send_Email(enteredEmailData);
 
-		String enteredPasswordData = "12345";
-		driver.findElement(By.id("input-password")).sendKeys(enteredPasswordData);
+		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
+		RegistrationPG.Send_ConfirmPassword(PropertyFileUtil.getProperty("ValidComfirmPasword"));
 
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+		RegistrationPG.select_SubscribeRadio_NO();
 
-		driver.findElement(By.id("input-newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
+		RegistrationPG.Select_disclaimer();
+
+		RegistrationPG.clickON_Continue();
 
 		// Database credentials
 		String jdbcURL = "jdbc:mysql://localhost:3306/opencart_db";
@@ -589,44 +587,33 @@ public class Registration {
 				ex.printStackTrace();
 			}
 		}
-
-		Assert.assertEquals(firstName, enteredFirstNameData);
-		Assert.assertEquals(lastName, enteredLastNameData);
-		Assert.assertEquals(email, enteredEmailData);
-		Assert.assertEquals(newsletter, 1);
+		Softass.assertEquals(firstName, PropertyFileUtil.getProperty("FirstName"));
+		Softass.assertEquals(lastName, PropertyFileUtil.getProperty("LastName"));
+		Softass.assertEquals(email, enteredEmailData);
+		Softass.assertEquals(newsletter, 1);
 		Softass.assertAll();
-
 	}
 
 //==================================================================================================
 	@Test(priority = 16)
 	public void TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces() {
 
-		driver.findElement(By.id("input-firstname")).sendKeys("     ");
-		driver.findElement(By.id("input-lastname")).sendKeys("     ");
-		driver.findElement(By.id("input-email")).sendKeys("     ");
-		driver.findElement(By.id("input-telephone")).sendKeys("     ");
-		driver.findElement(By.id("input-password")).sendKeys("     ");
-		driver.findElement(By.id("input-confirm")).sendKeys("     ");
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.xpath("//input[@value='Continue']")).click();
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.Send_FirstName("     ");
+		RegistrationPG.Send_LastName("     ");
+		RegistrationPG.Send_Email("     ");
+		RegistrationPG.Send_Mobile("     ");
+		RegistrationPG.Send_password("     ");
+		RegistrationPG.Send_ConfirmPassword("     ");
+		RegistrationPG.Select_disclaimer();
+		RegistrationPG.clickON_Continue();
 
-		String expectedFirstNameWarning = "First Name must be between 1 and 32 characters!";
-		String expectedLastNameWarning = "Last Name must be between 1 and 32 characters!";
-		String expectedEmailWarning = "E-Mail Address does not appear to be valid!";
-		Assert.assertEquals(driver
-				.findElement(By.xpath("//div[contains(text(),'First Name must be between 1 and 32 characters!')]"))
-				.getText(), expectedFirstNameWarning);
-		Assert.assertEquals(
-				driver.findElement(By.xpath("//div[contains(text(),'Last Name must be between 1 and 32 characters!')]"))
-						.getText(),
-				expectedLastNameWarning);
-		Assert.assertEquals(
-				driver.findElement(By.xpath("//div[contains(text(),'E-Mail Address does not appear to be valid!')]"))
-						.getText(),
-				expectedEmailWarning);
+		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Firstname(),
+				"First Name must be between 1 and 32 characters!");
+		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Lastname(),
+				"Last Name must be between 1 and 32 characters!");
+		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Email(), "E-Mail Address does not appear to be valid!");
 		Softass.assertAll();
-
 	}
 
 //==================================================================================================================
@@ -634,24 +621,25 @@ public class Registration {
 	public void TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(
 			String password) {
 
-		B_Registration_page RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG = new B_Registration_page(driver);
 
-		RegistrationPG.Send_FirstName();
-		RegistrationPG.Send_LastName();
-		RegistrationPG.Send_Email();
-		RegistrationPG.Send_Mobile();
-
-		RegistrationPG.printstatment();
-		driver.findElement(By.id("input-password")).sendKeys(password);
-		driver.findElement(By.id("input-confirm")).sendKeys(password);
+		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
+		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
+		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
+		RegistrationPG.Send_password(password);
+		RegistrationPG.Send_ConfirmPassword(password);
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
+		AccountSuccessPage = new C_account_success_page(driver);
 
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='text-danger']")).getText(),
+		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Password(),
 				"Password must be between 4 and 20 characters!");
-		Softass.assertAll();
+		// Softass.assertEquals(AccountSuccessPage.IsDisply_Success_messgae_on_Accountpage(),
+		// false);
 
+		Softass.assertAll();
 	}
 
 	@DataProvider(name = "passwordcomplixitycheck")
@@ -666,43 +654,35 @@ public class Registration {
 	@Test(priority = 19)
 	public void TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed() {
 
+		RegistrationPG = new B_Registration_page(driver);
+
 		String firstname = " somesh  ";
-		driver.findElement(By.id("input-firstname")).sendKeys(firstname);
+		String Lastname = " landge   ";
+		String Email = "    " + Reusable_details.reusableEmail() + "   ";
+		String Mobile = "  " + Reusable_details.reusableMobile() + "    ";
 
-		String lastname = " landge   ";
-		driver.findElement(By.id("input-lastname")).sendKeys(lastname);
+		RegistrationPG.Send_FirstName(firstname);
+		RegistrationPG.Send_LastName(Lastname);
+		RegistrationPG.Send_Email(Email);
+		RegistrationPG.Send_Mobile(Mobile);
+		RegistrationPG.Send_password("  Test@123  ");
+		RegistrationPG.Send_ConfirmPassword("  Test@123  ");
+		RegistrationPG.Select_disclaimer();
+		RegistrationPG.clickON_Continue();
 
-		String email = "    " + Reusable_details.reusableEmail() + "   ";
+		AccountSuccessPage = new C_account_success_page(driver);
+		AccountSuccessPage.click_ucc_ContinueCTA();
 
-		driver.findElement(By.id("input-email")).sendKeys(email);
+		myAcpage = new D_MyAccount_page(driver);
+		myAcpage.click_MyAC_editAccouintInfo();
 
-		String mobile = "  " + Reusable_details.reusableMobile() + "    ";
-		driver.findElement(By.id("input-telephone")).sendKeys(mobile);
+		MyAC_Editpage = new G_Account_EditPage(driver);
+		Softass.assertEquals(MyAC_Editpage.getFirstName_Editpg(), firstname.trim());
+		Softass.assertEquals(MyAC_Editpage.getLastName_Editpg(), Lastname.trim());
+		Softass.assertEquals(MyAC_Editpage.getEmail_Editpg(), Email.trim());
+		Softass.assertEquals(MyAC_Editpage.getMobile_Editpg(), Mobile.trim());
 
-		String password = "  Test@123  ";
-		driver.findElement(By.id("input-password")).sendKeys(password);
-
-		String confpassword = "  Test@123  ";
-		driver.findElement(By.id("input-confirm")).sendKeys(confpassword);
-
-		driver.findElement(By.xpath("//input[@name='agree']")).click();
-		driver.findElement(By.xpath("//input[@value='Continue']")).click();
-
-		driver.findElement(By.xpath("//a[normalize-space()='Continue']")).click();
-
-		driver.findElement(By.xpath("//a[text()='Edit your account information']")).click();
-
-		String Actualfirname = driver.findElement(By.id("input-firstname")).getAttribute("value");
-		String Actuallastname = driver.findElement(By.id("input-lastname")).getAttribute("value");
-		String actualemail = driver.findElement(By.id("input-email")).getAttribute("value");
-		String Actualtele = driver.findElement(By.id("input-telephone")).getAttribute("value");
-
-		Softass.assertEquals(Actualfirname, firstname.trim());
-		Softass.assertEquals(Actuallastname, lastname.trim());
-		Softass.assertEquals(actualemail, email.trim());
-		Softass.assertEquals(Actualtele, mobile.trim());
 		Softass.assertAll();
-
 	}
 
 //==============================================================================================
@@ -719,41 +699,32 @@ public class Registration {
 //==========================================================================================
 	@Test(priority = 21)
 	public void TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option() {
-		B_Registration_page RegistrationPG = new B_Registration_page(driver);
 
-		RegistrationPG.Send_FirstName();
-		RegistrationPG.Send_LastName();
-
-		RegistrationPG.Send_Email();
-		RegistrationPG.Send_Mobile();
-
-		RegistrationPG.printstatment();
-		RegistrationPG.Send_password();
-		RegistrationPG.Send_ConfirmPassword();
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
+		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
+		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
+		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
+		RegistrationPG.Send_ConfirmPassword(PropertyFileUtil.getProperty("ValidComfirmPasword"));
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.clickON_Continue();
 
 		Softass.assertEquals("https://tutorialsninja.com/demo/index.php?route=account/register",
 				"https://tutorialsninja.com/demo/index.php?route=account/register");
 
-		String privacypo = driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']"))
-				.getText();
-
-		String privacy = "Warning: You must agree to the Privacy Policy!";
-
-		Softass.assertEquals(privacypo, privacy);
+		Softass.assertEquals(RegistrationPG.Get_WorningDisclaimer(), "Warning: You must agree to the Privacy Policy!");
 		Softass.assertAll();
-
 	}
 
 //========================================================================================
 	@Test(priority = 22)
 	public void TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility() {
 
-		Softass.assertEquals(driver.findElement(By.id("input-password")).getDomAttribute("type"), "password");
-		Softass.assertEquals(driver.findElement(By.id("input-confirm")).getDomAttribute("type"), "password");
+		RegistrationPG = new B_Registration_page(driver);
+		Softass.assertEquals(RegistrationPG.get_DomAttributfotVisibility_password(), "password");
+		Softass.assertEquals(RegistrationPG.get_DomAttributfotVisibility_CNF_password(), "password");
 		Softass.assertAll();
-
 	}
 
 //================================================================================================
@@ -761,8 +732,7 @@ public class Registration {
 	public void TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()
 			throws InterruptedException {
 
-		A_Navigation_bar navbarmenu = new A_Navigation_bar(driver);
-
+		navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_contactust();
 		String contactusurl = driver.getCurrentUrl();
 		driver.navigate().back();
@@ -792,64 +762,63 @@ public class Registration {
 		driver.navigate().back();
 
 //		Thread.sleep(1000);
-//
 //		navbarmenu.click_breadc_register();
 //		String breadRegister = driver.getCurrentUrl();
 
-		B_Registration_page RegistrationPG = new B_Registration_page(driver);
-
+		RegistrationPG = new B_Registration_page(driver);
 		RegistrationPG.click_Header_loginhyperlink();
 		String loginhyperlink = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_login();
+		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+		RHS_Menu_bar.click_register_rightbar_login();
 		String login_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_register();
+		RHS_Menu_bar.click_register_rightbar_register();
 		String register_rightbox = driver.getCurrentUrl();
 
-		RegistrationPG.click_register_rightbar_forgotpass();
+		RHS_Menu_bar.click_register_rightbar_forgotpass();
 		String forgotpass_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_myAC();
+		RHS_Menu_bar.click_register_rightbar_myAC();
 		String myac_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_addressbook();
+		RHS_Menu_bar.click_register_rightbar_addressbook();
 		String addressbook_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_wishlist();
+		RHS_Menu_bar.click_register_rightbar_wishlist();
 		String wishlist_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_orderHistory();
+		RHS_Menu_bar.click_register_rightbar_orderHistory();
 		String orderhistory_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_Download();
+		RHS_Menu_bar.click_register_rightbar_Download();
 		String download_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_RecurrinhPaymnet();
+		RHS_Menu_bar.click_register_rightbar_RecurrinhPaymnet();
 		String recurringpayment_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_rewardPoint();
+		RHS_Menu_bar.click_register_rightbar_rewardPoint();
 		String rewardpoint_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_Return();
+		RHS_Menu_bar.click_register_rightbar_Return();
 		String return_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_Transaction();
+		RHS_Menu_bar.click_register_rightbar_Transaction();
 		String transaction_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
-		RegistrationPG.click_register_rightbar_newsletter();
+		RHS_Menu_bar.click_register_rightbar_newsletter();
 		String newletter_rightbox = driver.getCurrentUrl();
 		driver.navigate().back();
 
@@ -885,22 +854,16 @@ public class Registration {
 	@Test(priority = 24)
 	public void TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field() {
 
-		// Entering user details
-		B_Registration_page RegistrationPG = new B_Registration_page(driver);
-
-		RegistrationPG.Send_FirstName();
-		RegistrationPG.Send_LastName();
-		RegistrationPG.Send_Email();
-		RegistrationPG.Send_Mobile();
-
-		RegistrationPG.printstatment();
-		RegistrationPG.Send_password();
-
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
+		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
+		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
+		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
-		Softass.assertEquals(driver
-				.findElement(By.xpath("//div[text()='Password confirmation does not match password!']")).getText(),
+		Softass.assertEquals(RegistrationPG.Get_Worning_NOConfiPassword(),
 				"Password confirmation does not match password!");
 
 		Softass.assertEquals(driver.getCurrentUrl(),
@@ -913,16 +876,12 @@ public class Registration {
 	@Test(priority = 25)
 	public void TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage() {
 
-		Softass.assertEquals(driver.findElement(By.xpath("//ul[@class='breadcrumb']//a[normalize-space()='Register']"))
-				.isDisplayed(), true);
-
+		RegistrationPG = new B_Registration_page(driver);
+		Softass.assertEquals(RegistrationPG.isDisplyBreadcrum_Register(), true);
 		Softass.assertEquals(driver.getTitle(), "Register Account");
-
 		Softass.assertEquals(driver.getCurrentUrl(),
 				"https://tutorialsninja.com/demo/index.php?route=account/register");
-
 		Softass.assertAll();
-
 	}
 
 //=======================================================================
@@ -952,27 +911,29 @@ public class Registration {
 			System.out.println("Unknown browser:" + browserName);
 		}
 
-		driver.get("https://tutorialsninja.com/demo/");
+		driver.get(PropertyFileUtil.getProperty("baseUrl"));
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
-		driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
+		navbarmenu = new A_Navigation_bar(driver);
+		navbarmenu.click_NavBara_MyAccountCTA();
+		navbarmenu.click_NavBara_Register_MyAccount();
 
-		driver.findElement(By.xpath("//a[normalize-space()='Register']")).click();
-
-		driver.findElement(By.id("input-firstname")).sendKeys("somesh");
-		driver.findElement(By.id("input-lastname")).sendKeys("landge");
-		driver.findElement(By.id("input-email")).sendKeys(Reusable_details.reusableEmail());
-		driver.findElement(By.id("input-telephone")).sendKeys(Reusable_details.reusableMobile());
-		driver.findElement(By.id("input-password")).sendKeys("12345");
-		driver.findElement(By.id("input-confirm")).sendKeys("12345");
-		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.xpath("//input[@value='Continue']")).click();
-
-		Assert.assertTrue(driver.findElement(By.xpath("//a[@class='list-group-item'][text()='Logout']")).isDisplayed());
-		Assert.assertTrue(driver.findElement(By.xpath("//ul[@class='breadcrumb']//a[text()='Success']")).isDisplayed());
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
+		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
+		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
+		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
+		RegistrationPG.Send_ConfirmPassword(PropertyFileUtil.getProperty("ValidComfirmPasword"));
+		RegistrationPG.Select_disclaimer();
+		RegistrationPG.clickON_Continue();
+		
+		AccountSuccessPage = new C_account_success_page(driver);
+		RHS_Menu_bar = new  D_RHS_Menu_bar (driver);
+		Assert.assertTrue(RHS_Menu_bar.Logout_RHSmenu_isDisplayed());
+		Assert.assertTrue(AccountSuccessPage.IsDisply_Success_messgae_on_Accountpage());
 		Softass.assertAll();
 
 	}
@@ -984,6 +945,5 @@ public class Registration {
 		return data;
 
 	}
-//=====================================================================================================	
 
 }

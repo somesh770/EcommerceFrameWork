@@ -27,11 +27,18 @@ public class D_MyAccount_page {
 	}
 //-----------------------------------------------------------------------------
 	@FindBy(linkText= ("Subscribe / unsubscribe to newsletter"))
-	WebElement MyAC_subsscribe_Opn;
+	private WebElement MyAC_subsscribe_Opn;
 	
+	@FindBy(xpath = "//a[normalize-space()='Edit your account information']")
+	private WebElement MyAC_editAccouintInfo;
+//=====================================================================
 	public void click_MyAC_subsscribe_Opn()
 	{
 		MyAC_subsscribe_Opn.click();
+	}
+	public void click_MyAC_editAccouintInfo()
+	{
+		MyAC_editAccouintInfo.click();
 	}
 			
 }

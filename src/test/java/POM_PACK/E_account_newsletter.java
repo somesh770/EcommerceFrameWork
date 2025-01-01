@@ -14,10 +14,10 @@ public class E_account_newsletter {
 	}
 //====================================================================
 	@FindBy(xpath = "//input[@value='1']")
-	WebElement Newsleterpage_YES;
+	private WebElement Newsleterpage_YES;
 	
 	@FindBy(xpath = "//input[@value='0']")
-	WebElement Newsleterpage_NO;
+	private WebElement Newsleterpage_NO;
 //======================================================================
 	public boolean isSelectedNewsleterpage_YES() {
 		return Newsleterpage_YES.isSelected();

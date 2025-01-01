@@ -60,43 +60,64 @@ public class B_Registration_page {
 	@FindBy(xpath = "//a[normalize-space()='login page']")
 	private WebElement Header_loginhyperlink;
 
+	@FindBy(xpath = "//ul[@class='breadcrumb']//a[normalize-space()='Register']")
+	private WebElement BreadcrumbRegister;
+
 // Worning message
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
-	WebElement alertmeg_for_Privacy_Policy;
+	private WebElement alertmeg_for_Privacy_Policy;
 
 	@FindBy(xpath = "//div[contains(text(),'First Name must be between 1 and 32 characters!')]")
-	WebElement alertmeg_for_Firstname;
+	private WebElement alertmeg_for_Firstname;
 
 	@FindBy(xpath = "//div[contains(text(),'Last Name must be between 1 and 32 characters!')]")
-	WebElement alertmeg_for_Lastname;
+	private WebElement alertmeg_for_Lastname;
 
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
-	WebElement alertmeg_for_Email;
+	private WebElement alertmeg_for_Email;
 
 	@FindBy(xpath = "//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")
-	WebElement alertmeg_for_telephone;
+	private WebElement alertmeg_for_telephone;
 
 	@FindBy(xpath = "//div[contains(text(),'Password must be between 4 and 20 characters!')]")
-	WebElement alertmeg_for_Password;
+	private WebElement alertmeg_for_Password;
 
 	@FindBy(xpath = "//h1[text()='Register Account']")
-	WebElement Text_RegisterAccount;
+	private WebElement Text_RegisterAccount;
 
 	@FindBy(xpath = "//div[@class='text-danger']")
-	WebElement alrtConfirmPassword;
+	private WebElement alrtConfirmPassword;
 
 	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
-	WebElement Worning_Emailexits;
+	private WebElement Worning_Emailexits;
 
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
-	WebElement Worninginvalidemail04;
-	
+	private WebElement Worninginvalidemail04;
+
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement WorningDisclaimer;
+
+	@FindBy(xpath = "//div[text()='Password confirmation does not match password!']")
+	private WebElement Worning_NOConfiPassword;
+
 	// CSS properties
-	
 
 //===============================================================================================
+	public boolean isDisplyBreadcrum_Register() {
+		return BreadcrumbRegister.isDisplayed();
 
-	
+	}
+
+	public String  Get_Worning_NOConfiPassword() {
+		return Worning_NOConfiPassword.getText();
+
+	}
+
+	public String Get_WorningDisclaimer() {
+		return WorningDisclaimer.getText();
+
+	}
+
 	public String Get_Worning_Emailexits() {
 		return Worning_Emailexits.getText();
 
@@ -199,12 +220,20 @@ public class B_Registration_page {
 		return password.getAttribute("placeholder");
 	}
 
+	public String get_DomAttributfotVisibility_password() {
+		return password.getDomAttribute("type");
+	}
+
 	public void Send_ConfirmPassword(String confirmpasswordText) {
 		ConfirmPassword.sendKeys(confirmpasswordText);
 	}
 
 	public String get_placeholder_confirmpass() {
 		return ConfirmPassword.getAttribute("placeholder");
+	}
+
+	public String get_DomAttributfotVisibility_CNF_password() {
+		return password.getDomAttribute("type");
 	}
 
 	public void select_SubscribeRadio_YES() {

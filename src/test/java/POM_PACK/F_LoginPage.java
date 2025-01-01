@@ -15,7 +15,7 @@ public class F_LoginPage {
 
 //========================================================
 	@FindBy(xpath = "//a[normalize-space()='Continue']")
-	WebElement ContinueBBTN_loginpage;
+	private WebElement ContinueBBTN_loginpage;
 
 //===============================================================
 	public void click_ContinueBBTN_loginpage() {

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\somes\AppData\Local\Temp\testng-eclipse--1422378118\testng-customsuite.xml</span>
+                    <span>C:\Users\somes\AppData\Local\Temp\testng-eclipse-1159686476\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_PACK.Registration" class="method navigator-link" hash-for-method="TC_RF_014_Verify_all_mandatory_fields_in_Register_Account">TC_RF_014_Verify_all_mandatory_fields_in_Register_Account</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Test_PACK.Registration" class="method navigator-link" hash-for-method="TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO">TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,25 +119,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Test_PACK.Registration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_RF_014_Verify_all_mandatory_fields_in_Register_Account">
-                  </a> <!-- TC_RF_014_Verify_all_mandatory_fields_in_Register_Account -->
-                  <span class="method-name">TC_RF_014_Verify_all_mandatory_fields_in_Register_Account</span>
+                  <a name="TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO">
+                  </a> <!-- TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO -->
+                  <span class="method-name">TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.Registration.TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO(Registration.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\somes\AppData\Local\Temp\testng-eclipse--1422378118\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\somes\AppData\Local\Temp\testng-eclipse-1159686476\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +181,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;Test_PACK.Registration&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TC_RF_014_Verify_all_mandatory_fields_in_Register_Account&quot;/&gt;
+          &lt;include name=&quot;TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Test_PACK.Registration --&gt;
     &lt;/classes&gt;
@@ -192,14 +225,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_RF_014_Verify_all_mandatory_fields_in_Register_Account')
+data.setCell(0, 1, 'TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO')
 data.setCell(0, 2, 'Test_PACK.Registration')
-data.setCell(0, 3, 77);
+data.setCell(0, 3, 3267);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 77 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,15 +285,15 @@ return data;
                 <br/>
                 <span class="ignored-method-name">TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details</span>
                 <br/>
-                <span class="ignored-method-name">TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders</span>
-                <br/>
                 <span class="ignored-method-name">TC_RF_003_verifyRegisteringAnAccountproviding_all_fields</span>
+                <br/>
+                <span class="ignored-method-name">TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders</span>
                 <br/>
                 <span class="ignored-method-name">TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</span>
                 <br/>
                 <span class="ignored-method-name">TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES</span>
                 <br/>
-                <span class="ignored-method-name">TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO</span>
+                <span class="ignored-method-name">TC_RF_014_Verify_all_mandatory_fields_in_Register_Account</span>
                 <br/>
                 <span class="ignored-method-name">TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database</span>
                 <br/>
@@ -286,12 +319,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_RF_014_Verify_all_mandatory_fields_in_Register_Account</span>
-                <span class="method-start">4099 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO</span>
+                <span class="method-start">6481 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4179 ms</span>
+                <span class="method-start">9753 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

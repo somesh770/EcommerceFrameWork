@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_PACK.Registration">
         <methods>
-          <include name="TC_RF_014_Verify_all_mandatory_fields_in_Register_Account"/>
+          <include name="TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
