@@ -3,6 +3,8 @@ package POM_PACK;
 import java.util.Date;
 import java.util.Random;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,8 @@ import Utility_PACK.Reusable_details;
 
 public class B_Registration_page {
 	private WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(B_Registration_page.class);
+
 	private String email;
 	private String mobile;
 
@@ -163,8 +167,10 @@ public class B_Registration_page {
 
 	}
 
-	public void Send_FirstName(String FirstName) {
+	public B_Registration_page Send_FirstName(String FirstName) {
 		firstname_Fields.sendKeys(FirstName);
+		logger.debug("Entered First name :" + FirstName);
+		return this;
 	}
 
 	public String get_placeholder_firstname() {

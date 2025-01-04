@@ -1,0 +1,220 @@
+2025-01-03 21:38:23.417 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-03 21:38:25.791 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-03 21:38:31.815 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-03 21:38:33.519 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-03 21:38:33.905 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-03 21:48:12.809 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-03 21:48:15.306 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-03 21:48:18.154 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-03 21:48:18.173 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-03 21:48:18.552 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-03 21:48:35.641 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-03 21:48:37.866 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-03 21:48:45.398 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-03 21:48:47.044 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-03 21:48:47.383 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:29:59.473 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:30:02.139 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:30:09.430 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:30:09.646 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:31:00.863 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:31:00.866 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:31:36.076 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:31:44.344 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:31:59.986 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:32:00.615 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:47:18.140 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:47:21.127 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:47:23.410 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-04 11:47:24.649 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-04 11:47:25.286 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:47:31.408 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:47:34.219 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:48:19.885 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:48:22.749 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:48:24.609 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-04 11:48:25.683 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-04 11:48:25.683 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:50:38.893 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:50:41.815 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:50:54.653 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:50:54.653 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:52:25.831 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:52:29.084 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:52:41.611 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:52:41.611 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:53:43.816 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:53:46.907 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:53:49.259 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:53:49.260 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:53:58.853 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:54:01.674 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:54:14.220 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:54:14.220 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:56:27.959 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:56:30.820 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:56:35.079 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:56:35.080 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:58:25.332 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:58:26.901 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:58:29.214 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-01-04 11:58:29.410 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:58:57.331 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:58:58.724 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:59:01.019 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 11:59:01.170 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:59:01.171 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:59:02.208 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:59:15.321 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 11:59:15.508 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:59:15.508 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:59:16.533 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:59:29.378 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 11:59:29.590 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:59:29.592 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:59:30.607 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:59:43.075 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 11:59:43.286 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:59:43.287 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:59:44.292 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 11:59:57.015 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 11:59:57.226 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 11:59:57.226 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 11:59:58.235 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:00:10.538 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:00:10.750 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:00:46.498 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:00:49.647 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:00:52.739 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:00:53.388 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:00:53.388 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:00:55.950 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:01:12.342 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:01:12.960 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:01:12.960 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:01:15.549 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:01:28.861 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:01:29.543 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:01:29.545 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:01:32.160 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:01:45.606 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:01:46.216 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:01:46.216 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:01:48.586 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:02:02.022 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:02:02.632 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:02:02.634 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:02:05.055 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:02:18.106 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-01-04 12:02:18.732 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:03:23.466 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:03:26.276 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:03:39.322 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-01-04 12:03:39.962 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:07:29.773 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:07:32.696 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:07:45.286 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-01-04 12:07:45.919 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:08:56.795 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:08:59.652 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:09:02.128 [main] INFO  Test_PACK.Registration - Test excecuted in firefox - Registration is not allowed due heading and tailing space in email
+2025-01-04 12:09:02.131 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-01-04 12:09:02.761 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:09:16.615 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:09:18.045 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:09:21.551 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-01-04 12:09:21.737 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:10:31.411 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:10:34.290 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:10:36.861 [main] INFO  Test_PACK.Registration - Test excecuted in firefox - Registration is not allowed due heading and tailing space in email
+2025-01-04 12:10:36.864 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-01-04 12:10:37.600 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:10:56.440 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:10:59.301 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:11:01.353 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-01-04 12:11:01.999 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:11:22.719 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:11:25.494 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:11:28.164 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-01-04 12:11:28.820 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:11:38.092 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:11:40.978 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:11:43.216 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-01-04 12:11:43.884 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:16:55.487 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:16:58.542 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:17:00.348 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-01-04 12:17:00.965 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:22:01.153 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:22:04.109 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:22:16.016 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 12:22:16.672 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:45:26.276 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:45:31.703 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:45:49.705 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 12:45:50.866 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 12:49:58.765 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 12:50:03.725 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 12:50:19.457 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 12:50:20.568 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:02:16.241 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:02:21.017 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:02:36.139 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:02:37.276 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:03:01.683 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:03:06.458 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:03:26.611 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:03:27.776 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:04:12.746 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:04:17.526 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:04:38.614 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:04:39.790 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:05:17.040 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:05:22.032 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:05:37.466 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:05:38.651 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:06:00.244 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:06:05.451 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:06:21.955 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:06:23.115 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:09:05.783 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:09:10.733 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:09:18.378 [main] ERROR Test_PACK.Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:09:19.507 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:09:44.541 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:09:49.212 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:10:04.287 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-01-04 13:10:05.433 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:10:49.645 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:10:54.534 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:10:59.418 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-01-04 13:11:00.641 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:11:13.196 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:11:17.841 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:11:20.810 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-01-04 13:11:21.903 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:11:49.721 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:11:54.520 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:12:05.132 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-01-04 13:12:06.278 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:13:46.081 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:13:50.938 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:13:55.218 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-01-04 13:13:56.509 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:20:41.539 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:20:45.529 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:20:50.057 [main] INFO  Test_PACK.Registration - Starting test : TC_RF_001 
+2025-01-04 13:20:52.345 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-01-04 13:20:52.727 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:22:49.509 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:22:51.810 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:22:58.013 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-01-04 13:22:58.362 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:22:58.363 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:23:00.069 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:23:06.058 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-01-04 13:23:06.346 [main] INFO  Test_PACK.Registration - Driver closed
+2025-01-04 13:23:06.346 [main] INFO  Test_PACK.Registration - Starting test execution
+2025-01-04 13:23:08.031 [main] INFO  Test_PACK.Registration - Driver initialized
+2025-01-04 13:23:12.095 [main] INFO  Test_PACK.Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-01-04 13:23:12.320 [main] INFO  Test_PACK.Registration - Driver closed

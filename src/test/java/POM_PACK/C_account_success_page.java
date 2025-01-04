@@ -12,8 +12,8 @@ import Utility_PACK.Reusable_details;
 
 public class C_account_success_page {
 	private WebDriver driver;
-	private String email;
-	private String mobile;
+	public String email;
+	public String mobile;
 
 	// Constructor
 	public C_account_success_page(WebDriver driver) {

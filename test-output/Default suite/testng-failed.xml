@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_PACK.Registration">
         <methods>
-          <include name="TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO"/>
+          <include name="TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
