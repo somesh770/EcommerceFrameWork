@@ -58,7 +58,7 @@ public class D_RHS_Menu_bar {
 
 //==================================================================================================
 	
-	public void click_register_rightbar_login() {
+	public void click_register_rightbar_login_withoutLogin() {
 		register_rightbar_login.click();
 	}
 
@@ -113,5 +113,9 @@ public class D_RHS_Menu_bar {
 	public boolean Logout_RHSmenu_isDisplayed() {
 		return LoginOut_RHSmenu.isDisplayed();
 
+	}
+	
+	public void ClickOnLogOut_RHSMenu() {
+		LoginOut_RHSmenu.click();
 	}
 }

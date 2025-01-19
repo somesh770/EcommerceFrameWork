@@ -26,6 +26,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -33,6 +34,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import Base_pack.base;
 import POM_PACK.A_Navigation_bar;
 import POM_PACK.B_Registration_page;
 import POM_PACK.C_account_success_page;
@@ -41,16 +44,18 @@ import POM_PACK.D_RHS_Menu_bar;
 import POM_PACK.E_account_newsletter;
 import POM_PACK.F_LoginPage;
 import POM_PACK.G_Account_EditPage;
+import POM_PACK.Rootpage;
 import Utility_PACK.PropertyFileUtil;
 import Utility_PACK.Reusable_details;
 import Utility_PACK.TakeScreenshotClass;
+import jdk.internal.org.jline.utils.Log;
 
-public class Registration {
+public class Registration extends base {
 
 	public static WebDriver driver;
 	String browserName;
 	static SoftAssert Softass = new SoftAssert();
-	private static final Logger logger = LogManager.getLogger(Registration.class);
+	public static final Logger logger = LogManager.getLogger(Registration.class);
 
 	static A_Navigation_bar navbarmenu;
 	static B_Registration_page RegistrationPG;
@@ -60,34 +65,12 @@ public class Registration {
 	static E_account_newsletter NewsLetterpage;
 	static F_LoginPage loginpage;
 	static G_Account_EditPage MyAC_Editpage;
+	static Rootpage rootpage;
 
 	@BeforeMethod()
 	public void setUp() {
 
-		logger.info("Starting test execution");
-
-		browserName = PropertyFileUtil.getProperty("browserName");
-
-		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
-
-		}
-
-		else if (browserName.equalsIgnoreCase("Edge")) {
-			driver = new EdgeDriver();
-		} else if (browserName.equalsIgnoreCase("Firefox")) {
-
-			driver = new FirefoxDriver();
-		} else {
-			System.out.println("Unknown browser:" + browserName);
-		}
-
-		logger.info("Driver initialized");
-
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(PropertyFileUtil.getProperty("baseUrl"));
-
+		driver = setopenBrowserAndApplicationPageURL();
 		navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
@@ -310,16 +293,15 @@ public class Registration {
 	public void TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page() {
 
 		RegistrationPG = new B_Registration_page(driver);
+		rootpage = new Rootpage(driver);
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 //----------------------------------------------------------------------------------------
 		navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 //--------------------------------------------------------------------------------------
 		driver.get(PropertyFileUtil.getProperty("baseUrl"));
 		navbarmenu.click_NavBara_MyAccountCTA();
@@ -328,19 +310,15 @@ public class Registration {
 		loginpage = new F_LoginPage(driver);
 		loginpage.click_ContinueBBTN_loginpage();
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
-
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 //---------------------------------------------------------------------------------------------
 		driver.get(PropertyFileUtil.getProperty("baseUrl"));
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_Login_MyAccount();
 		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 		RHS_Menu_bar.click_register_rightbar_register();
-
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 		Softass.assertAll();
 	}
 
@@ -454,7 +432,9 @@ public class Registration {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
-		Assert.assertEquals(driver.getCurrentUrl(), "https://tutorialsninja.com/demo/index.php?route=account/register");
+		rootpage = new Rootpage(driver);
+
+		Assert.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 
 		Softass.assertAll();
 
@@ -725,9 +705,10 @@ public class Registration {
 	@Test(priority = 20)
 	public void TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default() {
 
-		boolean PrivacyPolicy_isselected = driver.findElement(By.xpath("//input[@name='agree']")).isSelected();
+		RegistrationPG = new B_Registration_page(driver);
+		RegistrationPG.IsDisclaimerSelected();
 
-		Softass.assertEquals(PrivacyPolicy_isselected, false);
+		Softass.assertEquals(RegistrationPG.IsDisclaimerSelected(), false);
 		Softass.assertAll();
 
 	}
@@ -746,8 +727,8 @@ public class Registration {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.clickON_Continue();
 
-		Softass.assertEquals("https://tutorialsninja.com/demo/index.php?route=account/register",
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		rootpage = new Rootpage(driver);
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 
 		Softass.assertEquals(RegistrationPG.Get_WorningDisclaimer(), "Warning: You must agree to the Privacy Policy!");
 		Softass.assertAll();
@@ -769,118 +750,105 @@ public class Registration {
 			throws InterruptedException {
 
 		navbarmenu = new A_Navigation_bar(driver);
+		rootpage = new Rootpage(driver);
+		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+		RegistrationPG = new B_Registration_page(driver);
+
 		navbarmenu.click_NavBara_contactust();
-		String contactusurl = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Contact Us");
+		rootpage.NagigateToBack();
 
 		navbarmenu.click_Header_withlist();
-		String wishlist = driver.getCurrentUrl();
-		driver.navigate().back();
+		String wishlist = rootpage.GetCurrentURL();
+		Softass.assertEquals(wishlist, PropertyFileUtil.getProperty("wishlistlink"));
+		rootpage.NagigateToBack();
 
 		navbarmenu.click_Header_shopppingcard();
-		String cardurl = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Shopping Cart");
+		rootpage.NagigateToBack();
 
 		navbarmenu.click_Header_checkout();
-		String checkouturl = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Shopping Cart");
+		rootpage.NagigateToBack();
 
 		navbarmenu.click_Header_QAfoxLogo();
-		String QAhomeurl = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Your Store");
+		rootpage.NagigateToBack();
 
+		navbarmenu.click_Header_searchbox();
+		Thread.sleep(1000);
+		Softass.assertEquals(rootpage.GetPageTitle(), " Search");
+		navbarmenu.click_NavBara_MyAccountCTA();
+		navbarmenu.click_NavBara_Register_MyAccount();
+
+		navbarmenu.Waitclick_breadc_homeicon();
 		navbarmenu.click_breadc_homeicon();
-		String breadhome = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Your Store");
+		rootpage.NagigateToBack();
 
+		navbarmenu.Waitclick_breadc_myaccount();
 		navbarmenu.click_breadc_myaccount();
-		String breadMyAC = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
-//		Thread.sleep(1000);
-//		navbarmenu.click_breadc_register();
-//		String breadRegister = driver.getCurrentUrl();
+		navbarmenu.click_breadc_register();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Register Account");
+		rootpage.NagigateToBack();
 
-		RegistrationPG = new B_Registration_page(driver);
 		RegistrationPG.click_Header_loginhyperlink();
-		String loginhyperlink = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		RHS_Menu_bar.click_register_rightbar_login();
-		String login_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		RHS_Menu_bar.click_register_rightbar_login_withoutLogin();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_register();
-		String register_rightbox = driver.getCurrentUrl();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Register Account");
 
 		RHS_Menu_bar.click_register_rightbar_forgotpass();
-		String forgotpass_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Forgot Your Password?");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_myAC();
-		String myac_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_addressbook();
-		String addressbook_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_wishlist();
-		String wishlist_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_orderHistory();
-		String orderhistory_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_Download();
-		String download_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_RecurrinhPaymnet();
-		String recurringpayment_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_rewardPoint();
-		String rewardpoint_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_Return();
-		String return_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_Transaction();
-		String transaction_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 
 		RHS_Menu_bar.click_register_rightbar_newsletter();
-		String newletter_rightbox = driver.getCurrentUrl();
-		driver.navigate().back();
-
-		Softass.assertEquals(contactusurl, PropertyFileUtil.getProperty("Headercontactusurl"));
-		Softass.assertEquals(wishlist, PropertyFileUtil.getProperty("wishlistlink"));
-		Softass.assertEquals(cardurl, PropertyFileUtil.getProperty("cardURL"));
-		Softass.assertEquals(checkouturl, PropertyFileUtil.getProperty("checkouturl"));
-		Softass.assertEquals(QAhomeurl, PropertyFileUtil.getProperty("QAhomeurl"));
-		Softass.assertEquals(breadhome, PropertyFileUtil.getProperty("breadhome"));
-		Softass.assertEquals(breadMyAC, PropertyFileUtil.getProperty("breadMyAC"));
-//		 Softass.assertEquals(breadRegister,
-//		 "https://tutorialsninja.com/demo/index.php?route=account/register");
-		Softass.assertEquals(loginhyperlink, PropertyFileUtil.getProperty("loginhyperlink"));
-		Softass.assertEquals(login_rightbox, PropertyFileUtil.getProperty("loginrightbox"));
-		Softass.assertEquals(register_rightbox, PropertyFileUtil.getProperty("register_rightbox"));
-		Softass.assertEquals(forgotpass_rightbox, PropertyFileUtil.getProperty("contactusurl"));
-		Softass.assertEquals(myac_rightbox, PropertyFileUtil.getProperty("forgotpass_rightbox"));
-		Softass.assertEquals(addressbook_rightbox, PropertyFileUtil.getProperty("addressbook_rightbox"));
-		Softass.assertEquals(wishlist_rightbox, PropertyFileUtil.getProperty("wishlist_rightbox"));
-		Softass.assertEquals(orderhistory_rightbox, PropertyFileUtil.getProperty("orderhistory_rightbox"));
-		Softass.assertEquals(download_rightbox, PropertyFileUtil.getProperty("download_rightbox"));
-		Softass.assertEquals(recurringpayment_rightbox, PropertyFileUtil.getProperty("recurringpayment_rightbox"));
-		Softass.assertEquals(rewardpoint_rightbox, PropertyFileUtil.getProperty("rewardpoint_rightbox"));
-		Softass.assertEquals(return_rightbox, PropertyFileUtil.getProperty("return_rightbox"));
-		Softass.assertEquals(transaction_rightbox, PropertyFileUtil.getProperty("transaction_rightbox"));
-		Softass.assertEquals(newletter_rightbox, PropertyFileUtil.getProperty("newletter_rightbox"));
+		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
+		rootpage.NagigateToBack();
 		Softass.assertAll();
 
 	}
@@ -897,12 +865,11 @@ public class Registration {
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-
+		rootpage = new Rootpage(driver);
 		Softass.assertEquals(RegistrationPG.Get_Worning_NOConfiPassword(),
 				"Password confirmation does not match password!");
 
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 		Softass.assertAll();
 
 	}
@@ -912,10 +879,13 @@ public class Registration {
 	public void TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage() {
 
 		RegistrationPG = new B_Registration_page(driver);
+
+		rootpage = new Rootpage(driver);
+
 		Softass.assertEquals(RegistrationPG.isDisplyBreadcrum_Register(), true);
-		Softass.assertEquals(driver.getTitle(), "Register Account");
-		Softass.assertEquals(driver.getCurrentUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/register");
+		Softass.assertEquals(rootpage.GetPageTitle(), "Register Account");
+		Softass.assertEquals(driver.getCurrentUrl(), PropertyFileUtil.getProperty("register_rightbox"));
+
 		Softass.assertAll();
 	}
 
@@ -947,14 +917,6 @@ public class Registration {
 		Assert.assertTrue(RHS_Menu_bar.Logout_RHSmenu_isDisplayed());
 		Assert.assertTrue(AccountSuccessPage.IsDisply_Success_messgae_on_Accountpage());
 		Softass.assertAll();
-
-	}
-
-	@DataProvider(name = "DataProviderforTest")
-
-	public Object[][] DataProviderforTest() {
-		Object[][] data = { { "chrome" }, { "Firefox" }, { "Edge" } };
-		return data;
 
 	}
 

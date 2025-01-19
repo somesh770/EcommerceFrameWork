@@ -1,18 +1,14 @@
 package POM_PACK;
 
-import java.util.Date;
-import java.util.Random;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import Utility_PACK.PropertyFileUtil;
-import Utility_PACK.Reusable_details;
 
 public class B_Registration_page {
 	private WebDriver driver;
@@ -120,6 +116,12 @@ public class B_Registration_page {
 	public String Get_WorningDisclaimer() {
 		return WorningDisclaimer.getText();
 
+	}
+	
+	public boolean IsDisclaimerSelected() {
+		
+		return disclaimer.isSelected();
+		
 	}
 
 	public String Get_Worning_Emailexits() {

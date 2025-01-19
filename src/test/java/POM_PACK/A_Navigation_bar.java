@@ -1,17 +1,23 @@
 package POM_PACK;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class A_Navigation_bar {
 	private WebDriver driver;
+	private WebDriverWait wait;
 
 // Constructor	
 	public A_Navigation_bar(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 //========================================================================
@@ -58,7 +64,13 @@ public class A_Navigation_bar {
 	@FindBy(xpath = "//div[@id='account-register']//li[2]")
 	private WebElement breadc_register;
 
+	@FindBy(xpath = "//a[normalize-space()='Login']")
+	private WebElement navbarLoginbutton;
 //=============================================================================
+	public void click_nnavbarLoginbutton() {
+		navbarLoginbutton.click();
+	}
+	
 	public void click_NavBara_MyAccountCTA() {
 		MyAccountCTA.click();
 	}
@@ -101,12 +113,30 @@ public class A_Navigation_bar {
 		Header_QAfoxLogo.click();
 	}
 
+	public void Waitclick_breadc_homeicon() {
+
+		wait.until(ExpectedConditions.elementToBeClickable(breadc_homeicon));
+	}
+
 	public void click_breadc_homeicon() {
+
 		breadc_homeicon.click();
 	}
 
+	public void Waitclick_breadc_myaccount() {
+
+		wait.until(ExpectedConditions.elementToBeClickable(breadc_myaccount));
+
+	}
+
 	public void click_breadc_myaccount() {
+
 		breadc_myaccount.click();
+	}
+
+	public void Waitclick_breadc_register() {
+		wait.until(ExpectedConditions.elementToBeClickable(breadc_register));
+
 	}
 
 	public void click_breadc_register() {
