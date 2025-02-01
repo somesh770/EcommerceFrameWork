@@ -114,8 +114,8 @@ public class A_Navigation_bar {
 		Header_checkout.click();
 	}
 
-	public void click_Header_searchbox() {
-		Header_searchbox.click();
+	public void SendKeysIn_searchbox(String SearchKeys) {
+		Header_searchbox.sendKeys(SearchKeys);
 	}
 
 	public void click_Header_searchbutto() {

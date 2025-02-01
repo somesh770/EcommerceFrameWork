@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_PACK.C_LogOut">
+      <class name="Test_PACK.D_Search">
         <methods>
-          <include name="setup"/>
-          <include name="TC_LG_008_Verify_logging_out_and_logging_in_immediately_after_logout"/>
           <include name="TearDown"/>
+          <include name="setup"/>
+          <include name="TC_SF_001_Verify_searching_with_an_existing_Product_Name"/>
         </methods>
-      </class> <!-- Test_PACK.C_LogOut -->
+      </class> <!-- Test_PACK.D_Search -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
