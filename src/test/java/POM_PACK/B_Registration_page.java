@@ -11,11 +11,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class B_Registration_page {
-	private WebDriver driver;
+	public WebDriver driver;
     private static final Logger logger = LogManager.getLogger(B_Registration_page.class);
 
-	private String email;
-	private String mobile;
+    public String email;
+    public String mobile;
 
 	// Constructor
 	public B_Registration_page(WebDriver driver) {

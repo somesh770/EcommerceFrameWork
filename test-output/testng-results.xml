@@ -1,74 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="25" total="26" passed="0" failed="1" skipped="0">
+<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-19T22:46:51 IST" name="Default suite" finished-at="2025-01-19T22:47:21 IST" duration-ms="30359">
+  <suite started-at="2025-02-01T16:42:51 IST" name="Default suite" finished-at="2025-02-01T16:42:57 IST" duration-ms="6544">
     <groups>
     </groups>
-    <test started-at="2025-01-19T22:46:51 IST" name="Default test" finished-at="2025-01-19T22:47:21 IST" duration-ms="30359">
-      <class name="Test_PACK.Registration">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test_PACK.Registration@3ecd267f]" started-at="2025-01-19T22:46:51 IST" name="setUp" finished-at="2025-01-19T22:47:03 IST" duration-ms="12386" status="PASS">
+    <test started-at="2025-02-01T16:42:51 IST" name="Default test" finished-at="2025-02-01T16:42:57 IST" duration-ms="6544">
+      <class name="Test_PACK.C_LogOut">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_PACK.C_LogOut@5cbe877d]" started-at="2025-02-01T16:42:51 IST" name="setup" finished-at="2025-02-01T16:42:56 IST" duration-ms="5435" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()[pri:23, instance:Test_PACK.Registration@3ecd267f]" started-at="2025-01-19T22:47:03 IST" name="TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page" finished-at="2025-01-19T22:47:20 IST" duration-ms="17428" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [ Search] but found [Register Account],
-expected [Register Account] but found [Account Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [ Search] but found [Register Account],
-expected [Register Account] but found [Account Login]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Test_PACK.Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page(Registration.java:871)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- setup -->
+        <test-method signature="TC_LG_009_Verify_Account_Logout_page()[pri:9, instance:Test_PACK.C_LogOut@5cbe877d]" started-at="2025-02-01T16:42:56 IST" name="TC_LG_009_Verify_Account_Logout_page" finished-at="2025-02-01T16:42:57 IST" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Test_PACK.Registration@3ecd267f]" started-at="2025-01-19T22:47:20 IST" name="tearDown" finished-at="2025-01-19T22:47:21 IST" duration-ms="501" status="PASS">
+        </test-method> <!-- TC_LG_009_Verify_Account_Logout_page -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test_PACK.C_LogOut@5cbe877d]" started-at="2025-02-01T16:42:57 IST" name="TearDown" finished-at="2025-02-01T16:42:57 IST" duration-ms="285" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page status=FAILURE method=Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()[pri:23, instance:Test_PACK.Registration@3ecd267f] output={null}]]]>
+                <![CDATA[[TestResult name=TC_LG_009_Verify_Account_Logout_page status=SUCCESS method=C_LogOut.TC_LG_009_Verify_Account_Logout_page()[pri:9, instance:Test_PACK.C_LogOut@5cbe877d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test_PACK.Registration -->
+        </test-method> <!-- TearDown -->
+      </class> <!-- Test_PACK.C_LogOut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

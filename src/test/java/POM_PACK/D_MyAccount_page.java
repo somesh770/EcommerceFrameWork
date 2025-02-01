@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import Utility_PACK.Reusable_details;
 
 public class D_MyAccount_page {
-	private WebDriver driver;
+	WebDriver driver;
 	private String email;
 	private String mobile;
 
@@ -31,6 +31,13 @@ public class D_MyAccount_page {
 	
 	@FindBy(xpath = "//a[normalize-space()='Edit your account information']")
 	private WebElement MyAC_editAccouintInfo;
+	
+	@FindBy(xpath = "//a[text()='Change your password']")
+	private WebElement MyAC_Change_your_password;
+	
+	
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement myAC_alertMessageElement;
 //=====================================================================
 	public void click_MyAC_subsscribe_Opn()
 	{
@@ -40,5 +47,15 @@ public class D_MyAccount_page {
 	{
 		MyAC_editAccouintInfo.click();
 	}
+	
+	public void click_MyAC_Change_your_password()
+	{
+		MyAC_Change_your_password.click();
+	}
+	
+	public String Get_myAC_alertMessageElement() {
+		return myAC_alertMessageElement.getText();
+	}
+	
 			
 }

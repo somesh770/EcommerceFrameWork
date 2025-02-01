@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_PACK.Registration">
+      <class name="Test_PACK.C_LogOut">
         <methods>
-          <include name="TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="setup"/>
+          <include name="TC_LG_008_Verify_logging_out_and_logging_in_immediately_after_logout"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- Test_PACK.Registration -->
+      </class> <!-- Test_PACK.C_LogOut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

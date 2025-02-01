@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class A_Navigation_bar {
-	private WebDriver driver;
+	protected WebDriver driver;
 	private WebDriverWait wait;
 
 // Constructor	
@@ -31,6 +31,9 @@ public class A_Navigation_bar {
 
 	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']")
 	private WebElement Login_MyAccount;
+
+	@FindBy(xpath = "(//a[text()='Logout'])[1]")
+	private WebElement LogoutMyAccount;
 
 	@FindBy(xpath = "//i[@class='fa fa-phone']")
 	private WebElement Header_Conatctus;
@@ -66,11 +69,21 @@ public class A_Navigation_bar {
 
 	@FindBy(xpath = "//a[normalize-space()='Login']")
 	private WebElement navbarLoginbutton;
+
 //=============================================================================
+	public boolean NavBar_IsLogINOptionDisply() {
+		return Login_MyAccount.isDisplayed();
+	}
+	
+	
+	public void ClickLogoutMyAccount() {
+		LogoutMyAccount.click();
+	}
+	
 	public void click_nnavbarLoginbutton() {
 		navbarLoginbutton.click();
 	}
-	
+
 	public void click_NavBara_MyAccountCTA() {
 		MyAccountCTA.click();
 	}

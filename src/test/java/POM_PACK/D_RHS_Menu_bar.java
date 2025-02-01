@@ -115,7 +115,14 @@ public class D_RHS_Menu_bar {
 
 	}
 	
+	public boolean LogIN_RHSmenu_isDisplayed() {
+		return register_rightbar_login.isDisplayed();
+
+	}
+	
 	public void ClickOnLogOut_RHSMenu() {
 		LoginOut_RHSmenu.click();
 	}
+	
+	
 }

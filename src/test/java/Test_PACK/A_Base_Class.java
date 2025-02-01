@@ -3,7 +3,7 @@ package Test_PACK;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 
-public class Base_Class {
+public class A_Base_Class {
 	
 	WebDriver driver;
 	

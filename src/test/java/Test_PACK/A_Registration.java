@@ -6,7 +6,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.Duration;
 import java.util.Properties;
 import javax.mail.Flags;
 import javax.mail.Folder;
@@ -14,7 +13,6 @@ import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.search.FlagTerm;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -22,11 +20,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -34,7 +27,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import Base_pack.base;
 import POM_PACK.A_Navigation_bar;
 import POM_PACK.B_Registration_page;
@@ -48,24 +40,13 @@ import POM_PACK.Rootpage;
 import Utility_PACK.PropertyFileUtil;
 import Utility_PACK.Reusable_details;
 import Utility_PACK.TakeScreenshotClass;
-import jdk.internal.org.jline.utils.Log;
 
-public class Registration extends base {
+public class A_Registration extends base {
 
 	public static WebDriver driver;
 	String browserName;
 	static SoftAssert Softass = new SoftAssert();
-	public static final Logger logger = LogManager.getLogger(Registration.class);
-
-	static A_Navigation_bar navbarmenu;
-	static B_Registration_page RegistrationPG;
-	static C_account_success_page AccountSuccessPage;
-	static D_RHS_Menu_bar RHS_Menu_bar;
-	static D_MyAccount_page myAcpage;
-	static E_account_newsletter NewsLetterpage;
-	static F_LoginPage loginpage;
-	static G_Account_EditPage MyAC_Editpage;
-	static Rootpage rootpage;
+	public static final Logger logger = LogManager.getLogger(A_Registration.class);
 
 	@BeforeMethod()
 	public void setUp() {
@@ -144,7 +125,7 @@ public class Registration extends base {
 		String appPassword = appPasscode; // Your app password
 		String expectedSubject = "Welcome To TutorialNinja";
 		String expectedFromEmail = "tutorialsninja<account-update@tn.in>";
-		String expectedBodyContent = "Your account has been successfully created.";
+		// String expectedBodyContent = "Your account has been successfully created.";
 
 		try {
 			// Mail server connection properties
@@ -450,24 +431,25 @@ public class Registration extends base {
 //==================================================================================================================
 	@Test(priority = 12)
 	public void TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys() throws InterruptedException {
-		Actions act = new Actions(driver);
 
-		act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).pause(Duration.ofSeconds(2))
-				.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).pause(Duration.ofSeconds(2)).sendKeys(Keys.ENTER)
-				.build().perform();
-
-		Thread.sleep(1000);
-
-		for (int i = 1; i <= 23; i++) {
-			act.sendKeys(Keys.TAB).perform();
-		}
-
-		act.sendKeys("somesh").sendKeys(Keys.TAB).sendKeys("landge").sendKeys(Keys.TAB)
-				.sendKeys(Reusable_details.reusableEmail()).sendKeys(Keys.TAB)
-				.sendKeys(Reusable_details.reusableMobile()).sendKeys(Keys.TAB)
-				.sendKeys(PropertyFileUtil.getProperty("ValidPasword")).sendKeys(Keys.TAB)
-				.sendKeys(PropertyFileUtil.getProperty("ValidComfirmPasword")).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
-				.sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).build().perform();
+		RegistrationPG = new B_Registration_page(driver);
+		rootpage = new Rootpage(driver);
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 23);
+		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("FirstName"));
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("LastName"));
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.typeTextUsingActions(Reusable_details.reusableEmail());
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.typeTextUsingActions(Reusable_details.reusableMobile());
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("ValidPasword"));
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("ValidComfirmPasword"));
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 3);
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.SPACE, 1);
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
+		rootpage.ClickKeyoardKeyMultipleTimes(Keys.ENTER, 1);
 
 		AccountSuccessPage = new C_account_success_page(driver);
 		Assert.assertEquals(AccountSuccessPage.GetTest_Success_messgae_on_Accountpage(),
@@ -479,7 +461,6 @@ public class Registration extends base {
 		Softass.assertAll();
 
 	}
-
 //===============================================================================================
 	@Test(priority = 13)
 	public static void TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders() {
@@ -775,9 +756,9 @@ public class Registration extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Your Store");
 		rootpage.NagigateToBack();
 
-		navbarmenu.click_Header_searchbox();
+		navbarmenu.click_Header_searchbutto();
 		Thread.sleep(1000);
-		Softass.assertEquals(rootpage.GetPageTitle(), " Search");
+		Softass.assertEquals(rootpage.GetPageTitle(), "Search");
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
 
@@ -850,7 +831,6 @@ public class Registration extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		rootpage.NagigateToBack();
 		Softass.assertAll();
-
 	}
 
 //===================================================================================================
@@ -894,7 +874,6 @@ public class Registration extends base {
 	public void TC_RF_026_Verify_the_UI_of_Register_Account_page() throws IOException {
 
 		TakeScreenshotClass.takeScreenshot("registration page1", driver);
-		Softass.assertAll();
 
 	}
 
