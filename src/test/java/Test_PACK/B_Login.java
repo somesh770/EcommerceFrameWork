@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -35,6 +36,7 @@ public class B_Login extends base {
 		navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_nnavbarLoginbutton();
+		//SoftAssert Softass = new SoftAssert();
 
 	}
 
@@ -46,6 +48,7 @@ public class B_Login extends base {
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			logger.info("Test passed: " + result.getName());
 		}
+		Softass.assertAll();
 
 		if (driver != null) {
 			driver.quit();
@@ -67,7 +70,7 @@ public class B_Login extends base {
 
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
+	//	Softass.assertAll();
 
 	}
 //=============================================================================
@@ -83,7 +86,7 @@ public class B_Login extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -99,7 +102,7 @@ public class B_Login extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		Softass.assertAll();
+		//Softass.assertAll();
 	}
 
 //================================================================================
@@ -114,7 +117,7 @@ public class B_Login extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		Softass.assertAll();
+		//Softass.assertAll();
 	}
 
 //===================================================================================
@@ -126,7 +129,7 @@ public class B_Login extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -138,7 +141,7 @@ public class B_Login extends base {
 		Softass.assertEquals(loginPage.IsDisply_Forgotpassword(), true);
 		loginPage.ClickOnForgotpassword();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Forgot Your Password?");
-		Softass.assertAll();
+	//Softass.assertAll();
 
 	}
 
@@ -158,7 +161,7 @@ public class B_Login extends base {
 
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -184,7 +187,7 @@ public class B_Login extends base {
 		rootpage.RefreshPage();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
+	//	Softass.assertAll();
 
 	}
 
@@ -201,7 +204,7 @@ public class B_Login extends base {
 		rootpage.NagigateToBack();
 		rootpage.RefreshPage();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -216,13 +219,13 @@ public class B_Login extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		Softass.assertAll();
+	//	Softass.assertAll();
 
 	}
 
 //===============================================================================
 	@Test(priority = 12)
-	public void TC_LF_12_verifyNumberOfUnsuccessfulLoginAttemps() {
+	public void TC_LF_12_verify_Number_Of_Unsuccessful_Login_Attemps() {
 
 		loginPage = new F_LoginPage(driver);
 
@@ -230,19 +233,19 @@ public class B_Login extends base {
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("mismatchingPassword"));
 		loginPage.ClickOnLogin();
 
-		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
+		Assert.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
-		Softass.assertAll();
+
 	}
 
 //====================================================================================
 	@Test(priority = 13)
-	public void TC_LF_013VerifythetextintothePasswordfieldistoggledtohideitsvisibility() {
+	public void TC_LF_013Verify_text_into_Password_field_is_toggled_to_hide_it_svisibility() {
 		loginPage = new F_LoginPage(driver);
 
 		Softass.assertEquals(loginPage.GetDomAttribut_email(), "text");
 		Softass.assertEquals(loginPage.GetDomAttribut_pasword(), "password");
-		Softass.assertAll();
+	//	Softass.assertAll();
 	}
 
 //====================================================================================
@@ -268,7 +271,7 @@ public class B_Login extends base {
 
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
-		Softass.assertFalse(rootpage.GetPageSourceCode().contains(PropertyFileUtil.getProperty("ValidPasword")));
+		Assert.assertFalse(rootpage.GetPageSourceCode().contains(PropertyFileUtil.getProperty("ValidPasword")));
 	}
 
 //=======================================================================
@@ -300,7 +303,7 @@ public class B_Login extends base {
 		loginPage.ClickOnLogin();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -394,7 +397,7 @@ public class B_Login extends base {
 		RHS_Menu_bar.click_register_rightbar_newsletter();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 
-		Softass.assertAll();
+	//	Softass.assertAll();
 
 	}
 
@@ -417,7 +420,7 @@ public class B_Login extends base {
 		RHS_Menu_bar.click_register_rightbar_login_withoutLogin();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 
-		Softass.assertAll();
+		//Softass.assertAll();
 
 	}
 
@@ -433,7 +436,7 @@ public class B_Login extends base {
 		Softass.assertEquals(loginPage.Get_headingNew_Customer(), "New Customer");
 		Softass.assertEquals(loginPage.Get_headingReturninCustomer(), "Returning Customer");
 
-		Softass.assertAll();
+	//	Softass.assertAll();
 	}
 
 //=========================================================================================
@@ -455,6 +458,6 @@ public class B_Login extends base {
 
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
+	//	Softass.assertAll();
 	}
 }

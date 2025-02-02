@@ -3,7 +3,8 @@
 <suite name="Suite" >
   <test name="Test">
     <classes>
-      <class name="Temp_pack.Login"/>
+      <class name="Test_PACK.C_LogOut"/>
+      <class name="Test_PACK.B_Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

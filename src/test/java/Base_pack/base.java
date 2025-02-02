@@ -52,6 +52,11 @@ public class base {
 
 		browserName = PropertyFileUtil.getProperty("browserName");
 
+//		if (browserName == null || browserName.isEmpty()) {
+//			logger.warn("Browser name not provided, defaulting to Chrome");
+//			browserName = "chrome";
+//		}
+
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 
@@ -66,7 +71,7 @@ public class base {
 			System.out.println("Unknown browser:" + browserName);
 		}
 
-		logger.info("Driver initialized");
+
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

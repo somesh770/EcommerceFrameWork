@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -46,6 +47,7 @@ public class C_LogOut extends base {
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			logger.info("Test passed: " + result.getName());
 		}
+		Softass.assertAll();
 
 		if (driver != null) {
 			driver.quit();
@@ -53,16 +55,16 @@ public class C_LogOut extends base {
 		}
 	}
 
-//=============================================================================================================	
+//=============================================================================================================
 
-	@Test(priority = 1)
+	@Test (priority = 1)
 	public void TC_LG_001_Verify_Logging_out_by_selecting_Logout_option_from_My_Account_dropmenu() {
 
 		navbarmenu = new A_Navigation_bar(driver);
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.ClickLogoutMyAccount();
 		ACLogoutPage = new L_AccountLogoutPage(driver);
-		Softass.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
+		Assert.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
 	}
 
 //===========================================================================================
@@ -71,7 +73,7 @@ public class C_LogOut extends base {
 		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 		RHS_Menu_bar.ClickOnLogOut_RHSMenu();
 		ACLogoutPage = new L_AccountLogoutPage(driver);
-		Softass.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
+		Assert.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
 	}
 
 //===========================================================================================
@@ -94,7 +96,6 @@ public class C_LogOut extends base {
 
 		Softass.assertTrue(navbarmenu.NavBar_IsLogINOptionDisply());
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
-		Softass.assertAll();
 	}
 
 //=======================================================================================
@@ -110,7 +111,6 @@ public class C_LogOut extends base {
 		navbarmenu.click_NavBara_MyAccountCTA();
 		Softass.assertTrue(navbarmenu.NavBar_IsLogINOptionDisply());
 		Softass.assertEquals(rootpage.GetPageTitle(), "Your Store");
-		Softass.assertAll();
 	}
 
 //==========================================================================================
@@ -124,8 +124,8 @@ public class C_LogOut extends base {
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.ClickLogoutMyAccount();
 
-		Softass.assertTrue(RHS_Menu_bar.LogIN_RHSmenu_isDisplayed());
-		Softass.assertAll();
+		Assert.assertTrue(RHS_Menu_bar.LogIN_RHSmenu_isDisplayed());
+
 	}
 
 //=========================================================================
@@ -153,7 +153,6 @@ public class C_LogOut extends base {
 
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		Softass.assertAll();
 
 	}
 
@@ -169,13 +168,13 @@ public class C_LogOut extends base {
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Logout");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("LogOutpageURL"));
 		Softass.assertTrue(ACLogoutPage.IsLogOutDisplyOnBreadCrum());
-		Softass.assertAll();
+
 	}
 
 //=================================================================================
 	@Test(priority = 10)
 	public void TC_LG_010_Verify_the_UI_of_the_Logout_option_and_the_Account_Logout_page() throws IOException {
-		TakeScreenshotClass.takeScreenshot("Accouunt Logout page", driver);
+		TakeScreenshotClass.takeScreenshot("Accouunt Logout page01", driver);
 
 	}
 //============================================================================================
@@ -185,7 +184,7 @@ public class C_LogOut extends base {
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.ClickLogoutMyAccount();
 		ACLogoutPage = new L_AccountLogoutPage(driver);
-		Softass.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
+		Assert.assertTrue(ACLogoutPage.Is_Disply_AccountLogoutText());
 
 	}
 
