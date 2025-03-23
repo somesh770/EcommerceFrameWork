@@ -19,6 +19,7 @@ import POM_PACK.D_RHS_Menu_bar;
 import POM_PACK.E_account_newsletter;
 import POM_PACK.F_LoginPage;
 import POM_PACK.G_Account_EditPage;
+import POM_PACK.I_SearchPage;
 import POM_PACK.K_Change_Password_Page;
 import POM_PACK.L_AccountLogoutPage;
 import POM_PACK.Rootpage;
@@ -27,7 +28,7 @@ import Utility_PACK.PropertyFileUtil;
 public class base {
 
 	public static WebDriver driver;
-	String browserName;
+	public static String browserName;
 	static SoftAssert Softass = new SoftAssert();
 	public static final Logger logger = LogManager.getLogger(base.class);
 
@@ -43,19 +44,12 @@ public class base {
 	public F_LoginPage loginPage;
 	public Actions act;
 	public K_Change_Password_Page ChangePasswordPage;
-	public L_AccountLogoutPage ACLogoutPage ;
-
+	public L_AccountLogoutPage ACLogoutPage;
+	public I_SearchPage  SearchPage;
 
 	public WebDriver setopenBrowserAndApplicationPageURL() {
 
-		logger.info("Starting test execution");
-
-		browserName = PropertyFileUtil.getProperty("browserName");
-
-//		if (browserName == null || browserName.isEmpty()) {
-//			logger.warn("Browser name not provided, defaulting to Chrome");
-//			browserName = "chrome";
-//		}
+		browserName = PropertyFileUtil.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
@@ -64,6 +58,7 @@ public class base {
 
 		else if (browserName.equalsIgnoreCase("Edge")) {
 			driver = new EdgeDriver();
+
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 
 			driver = new FirefoxDriver();
@@ -71,16 +66,12 @@ public class base {
 			System.out.println("Unknown browser:" + browserName);
 		}
 
-
-
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(PropertyFileUtil.getProperty("baseUrl"));
-		
+
 		return driver;
 
 	}
-
-
 
 }

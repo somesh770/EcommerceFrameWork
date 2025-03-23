@@ -27,16 +27,22 @@ import Utility_PACK.TakeScreenshotClass;
 
 public class B_Login extends base {
 	public WebDriver driver;
-	static SoftAssert Softass = new SoftAssert();
 	private static final Logger logger = LogManager.getLogger(B_Login.class);
 
 	@BeforeMethod
 	public void setup() {
 		driver = setopenBrowserAndApplicationPageURL();
+		loginPage = new F_LoginPage(driver);
+		rootpage = new Rootpage(driver);
+		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 		navbarmenu = new A_Navigation_bar(driver);
+		ChangePasswordPage = new K_Change_Password_Page(driver);
+		myAcpage = new D_MyAccount_page(driver);
+		RegistrationPG = new B_Registration_page(driver);
+
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_nnavbarLoginbutton();
-		//SoftAssert Softass = new SoftAssert();
+		
 
 	}
 
@@ -48,7 +54,6 @@ public class B_Login extends base {
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			logger.info("Test passed: " + result.getName());
 		}
-		Softass.assertAll();
 
 		if (driver != null) {
 			driver.quit();
@@ -56,101 +61,97 @@ public class B_Login extends base {
 		}
 
 	}
+
 //===========================================================================
 
 	@Test(priority = 1)
 	public void TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
+
 		loginPage.ClickOnLogin();
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-	//	Softass.assertAll();
+		 
+		Softass.assertAll();
+		 
 
 	}
 //=============================================================================
 
 	@Test(priority = 2)
 	public void TC_LF_002_verifyLoggingIntoApplicationUsingInvalidCredentials() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 
 		loginPage.SendEmail_login(Reusable_details.reusableEmail());
 		loginPage.Sendlogin_password(Reusable_details.reusableMobile());
 		loginPage.ClickOnLogin();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //===================================================================================
 	@Test(priority = 3)
 	public void TC_LF_003_verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 
 		loginPage.SendEmail_login(Reusable_details.reusableEmail());
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		//Softass.assertAll();
+		Softass.assertAll();
 	}
 
 //================================================================================
 	@Test(priority = 4)
 	public void TC_LF_004_verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("Invalidpassword"));
 		loginPage.ClickOnLogin();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		//Softass.assertAll();
+		Softass.assertAll();
 	}
 
 //===================================================================================
 	@Test(priority = 5)
 	public void TC_LF_005_verifyLoggingIntoApplicationWithoutProvidingAnyCredentials() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 		loginPage.ClickOnLogin();
+
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //=========================================================================
 	@Test(priority = 6)
 	public void TC_LF_006_verifyForgottenPasswordOptionIsAvailable() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
+
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(loginPage.IsDisply_Forgotpassword(), true);
 		loginPage.ClickOnForgotpassword();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Forgot Your Password?");
-	//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //========================================================================
 	@Test(priority = 7)
 	public void TC_LF_007_verifyLoggingIntoApplicationUsingKeyboardKeys() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 23);
 		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("ExEmail"));
@@ -159,75 +160,74 @@ public class B_Login extends base {
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 2);
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.ENTER, 1);
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //=======================================================================
 	@Test(priority = 8)
 	public void TC_LF_008_verifyPlaceHoldersOfFieldsInLoginPage() {
-		loginPage = new F_LoginPage(driver);
+
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(loginPage.GetplacholderEmail(), "E-Mail Address");
 		Softass.assertEquals(loginPage.GetplacholderPassword(), "Password");
+		Softass.assertAll();
 	}
 
 //=====================================================================================	
 	@Test(priority = 9)
 	public void TC_LF_009_verifyBrowsingBackAfterLogin() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
 
 		rootpage.NagigateToBack();
 		rootpage.RefreshPage();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-	//	Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //===================================================================	
 	@Test(priority = 10)
 	public void TC_LF_10verifyBrowsingBackAfterLogout() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
 		RHS_Menu_bar.ClickOnLogOut_RHSMenu();
 		rootpage.NagigateToBack();
 		rootpage.RefreshPage();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //========================================================================
 	@Test(priority = 11)
 	public void TC_LF_11_verifyLoggingIntoApplicationUsingInactiveCredentials() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
+
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("InactiveEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("PasswordInactiveAC"));
 		loginPage.ClickOnLogin();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(loginPage.Login_GetAlert_InvalidEmail(),
 				"Warning: No match for E-Mail Address and/or Password.");
-	//	Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //===============================================================================
 	@Test(priority = 12)
 	public void TC_LF_12_verify_Number_Of_Unsuccessful_Login_Attemps() {
-
-		loginPage = new F_LoginPage(driver);
 
 		loginPage.SendEmail_login(Reusable_details.reusableEmail());
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("mismatchingPassword"));
@@ -241,18 +241,17 @@ public class B_Login extends base {
 //====================================================================================
 	@Test(priority = 13)
 	public void TC_LF_013Verify_text_into_Password_field_is_toggled_to_hide_it_svisibility() {
-		loginPage = new F_LoginPage(driver);
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(loginPage.GetDomAttribut_email(), "text");
 		Softass.assertEquals(loginPage.GetDomAttribut_pasword(), "password");
-	//	Softass.assertAll();
+		Softass.assertAll();
 	}
 
 //====================================================================================
 	@Test(priority = 14)
 	public void TC_LF_014_verifyCopyingOfTextEnteredIntoPasswordField() throws InterruptedException {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
+
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnPasswordBox();
 		Thread.sleep(1000);
@@ -266,8 +265,6 @@ public class B_Login extends base {
 
 	@Test(priority = 15)
 	public void TC_LF_015_Verify_the_Password_is_not_visible_in_the_Page_Source() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
@@ -277,12 +274,6 @@ public class B_Login extends base {
 //=======================================================================
 	@Test(priority = 16)
 	public void TC_LF_016_Verify_Logging_into_the_Application_after_changing_the_password() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		ChangePasswordPage = new K_Change_Password_Page(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		navbarmenu = new A_Navigation_bar(driver);
-		myAcpage = new D_MyAccount_page(driver);
 
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -291,7 +282,7 @@ public class B_Login extends base {
 		ChangePasswordPage.EnterNewPassword(PropertyFileUtil.getProperty("ValidPasword"));
 		ChangePasswordPage.EnterNewConfirmPassword(PropertyFileUtil.getProperty("ValidPasword"));
 		ChangePasswordPage.ClickOnContinue();
-
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(myAcpage.Get_myAC_alertMessageElement(),
 				"Success: Your password has been successfully updated.");
 
@@ -303,7 +294,7 @@ public class B_Login extends base {
 		loginPage.ClickOnLogin();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
@@ -311,13 +302,9 @@ public class B_Login extends base {
 	@Test(priority = 17)
 	public void TC_LF_017_Verify_user_is_able_to_navigate_to_different_pages_from_Login_page()
 			throws InterruptedException {
-		loginPage = new F_LoginPage(driver);
-		navbarmenu = new A_Navigation_bar(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		RegistrationPG = new B_Registration_page(driver);
 
 		navbarmenu.click_NavBara_contactust();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Contact Us");
 		rootpage.NagigateToBack();
 
@@ -397,19 +384,15 @@ public class B_Login extends base {
 		RHS_Menu_bar.click_register_rightbar_newsletter();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 
-	//	Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //=====================================================================================	
 	@Test(priority = 18)
 	public void TC_LF_018_Verify_the_different_ways_of_navigating_to_the_Login_page() {
-		loginPage = new F_LoginPage(driver);
-		RegistrationPG = new B_Registration_page(driver);
-		navbarmenu = new A_Navigation_bar(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		rootpage = new Rootpage(driver);
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 
 		navbarmenu.click_NavBara_MyAccountCTA();
@@ -420,23 +403,22 @@ public class B_Login extends base {
 		RHS_Menu_bar.click_register_rightbar_login_withoutLogin();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 
-		//Softass.assertAll();
+		Softass.assertAll();
 
 	}
 
 //====================================================================================================
 	@Test(priority = 19)
 	public void TC_LF_019_Verify_the_Breakcrumb_Page_Heading_Page_Title_and_Page_URL_of_Login_page() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Account Login");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("loginrightbox"));
 
 		Softass.assertEquals(loginPage.Get_headingNew_Customer(), "New Customer");
 		Softass.assertEquals(loginPage.Get_headingReturninCustomer(), "Returning Customer");
 
-	//	Softass.assertAll();
+		Softass.assertAll();
 	}
 
 //=========================================================================================
@@ -448,16 +430,13 @@ public class B_Login extends base {
 //==============================================================================================
 	@Test(priority = 21)
 	public void TC_LF_21_Verify_the_Login_page_functionality_in_all_the_supported_environments() {
-		loginPage = new F_LoginPage(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 
 		loginPage.SendEmail_login(PropertyFileUtil.getProperty("ExEmail"));
 		loginPage.Sendlogin_password(PropertyFileUtil.getProperty("ValidPasword"));
 		loginPage.ClickOnLogin();
-
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetPageTitle(), "My Account");
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
-	//	Softass.assertAll();
+		Softass.assertAll();
 	}
 }

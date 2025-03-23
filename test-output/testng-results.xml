@@ -2,24 +2,24 @@
 <testng-results ignored="21" total="22" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-01T17:27:42 IST" name="Default suite" finished-at="2025-02-01T17:27:53 IST" duration-ms="10944">
+  <suite started-at="2025-03-01T11:10:10 IST" name="Default suite" finished-at="2025-03-01T11:10:15 IST" duration-ms="5020">
     <groups>
     </groups>
-    <test started-at="2025-02-01T17:27:42 IST" name="Default test" finished-at="2025-02-01T17:27:53 IST" duration-ms="10944">
+    <test started-at="2025-03-01T11:10:10 IST" name="Default test" finished-at="2025-03-01T11:10:15 IST" duration-ms="5020">
       <class name="Test_PACK.D_Search">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_PACK.D_Search@4566d049]" started-at="2025-02-01T17:27:42 IST" name="setup" finished-at="2025-02-01T17:27:51 IST" duration-ms="9256" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_PACK.D_Search@55342f40]" started-at="2025-03-01T11:10:10 IST" name="setup" finished-at="2025-03-01T11:10:13 IST" duration-ms="3368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_SF_001_Verify_searching_with_an_existing_Product_Name()[pri:1, instance:Test_PACK.D_Search@4566d049]" started-at="2025-02-01T17:27:51 IST" name="TC_SF_001_Verify_searching_with_an_existing_Product_Name" finished-at="2025-02-01T17:27:53 IST" duration-ms="1208" status="PASS">
+        <test-method signature="TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page()[pri:13, instance:Test_PACK.D_Search@55342f40]" started-at="2025-03-01T11:10:13 IST" name="TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page" finished-at="2025-03-01T11:10:14 IST" duration-ms="1222" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_SF_001_Verify_searching_with_an_existing_Product_Name -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test_PACK.D_Search@4566d049]" started-at="2025-02-01T17:27:53 IST" name="TearDown" finished-at="2025-02-01T17:27:53 IST" duration-ms="413" status="PASS">
+        </test-method> <!-- TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test_PACK.D_Search@55342f40]" started-at="2025-03-01T11:10:14 IST" name="TearDown" finished-at="2025-03-01T11:10:15 IST" duration-ms="367" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_SF_001_Verify_searching_with_an_existing_Product_Name status=SUCCESS method=D_Search.TC_SF_001_Verify_searching_with_an_existing_Product_Name()[pri:1, instance:Test_PACK.D_Search@4566d049] output={null}]]]>
+                <![CDATA[[TestResult name=TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page status=SUCCESS method=D_Search.TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page()[pri:13, instance:Test_PACK.D_Search@55342f40] output={null}]]]>
               </value>
             </param>
           </params>

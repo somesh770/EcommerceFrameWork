@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/19/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/16/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 05 12:29:31 IST 2025</td>
+<td>Started on:</td><td>Sun Feb 02 14:14:28 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>316 seconds (316445 ms)</td>
+<tr><td>Total time:</td><td>104 seconds (104573 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,111 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: ABCD456#</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [00afd740f60b525ad36b4099d6c71d08, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51375}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51375/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00afd740f60b525ad36b4099d6c71d08
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593987072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1593987072'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [00afd740f60b525ad36b4099d6c71d08, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51375}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51375/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00afd740f60b525ad36b4099d6c71d08
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default()'><b>TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default</b><br>Test class: Test_PACK.Registration</td>
+<td title='Test_PACK.A_Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option()'><b>TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option</b><br>Test class: Test_PACK.A_Registration</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default(Registration.java:731)
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
+	at Test_PACK.A_Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option(A_Registration.java:743)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103895364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2103895364'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace589610983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace589610983'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default(Registration.java:731)
+	at Test_PACK.A_Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option(A_Registration.java:743)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -208,27 +118,41 @@ Session ID: 00afd740f60b525ad36b4099d6c71d08
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_026_Verify_the_UI_of_Register_Account_page()'><b>TC_RF_026_Verify_the_UI_of_Register_Account_page</b><br>Test class: Test_PACK.Registration</td>
+<td title='Test_PACK.A_Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field()'><b>TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field</b><br>Test class: Test_PACK.A_Registration</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
 	expected [Somesh] but found [null],
 	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_026_Verify_the_UI_of_Register_Account_page(Registration.java:927)
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at Test_PACK.A_Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field(A_Registration.java:880)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace885722697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace885722697'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1674999797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1674999797'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
 	expected [Somesh] but found [null],
 	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_026_Verify_the_UI_of_Register_Account_page(Registration.java:927)
+	at Test_PACK.A_Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field(A_Registration.java:880)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -257,25 +181,29 @@ Session ID: 00afd740f60b525ad36b4099d6c71d08
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database()'><b>TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database</b><br>Test class: Test_PACK.Registration</td>
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: abcd1234</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0]
-	at Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(Registration.java:619)
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1687586610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1687586610'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0]
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2102562039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2102562039'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(Registration.java:619)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -304,27 +232,23 @@ Session ID: 00afd740f60b525ad36b4099d6c71d08
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces()'><b>TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces</b><br>Test class: Test_PACK.Registration</td>
+<td title='Test_PACK.A_Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed()'><b>TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed</b><br>Test class: Test_PACK.A_Registration</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces(Registration.java:648)
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
+	at Test_PACK.A_Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(A_Registration.java:711)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace550424075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace550424075'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace897801829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace897801829'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces(Registration.java:648)
+	at Test_PACK.A_Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(A_Registration.java:711)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -353,113 +277,23 @@ Session ID: 00afd740f60b525ad36b4099d6c71d08
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>2</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: 12345</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [993d49441dee18b6e9ad43ef9e3dfdcd, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51244}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51244/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 993d49441dee18b6e9ad43ef9e3dfdcd
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793485742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace793485742'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [993d49441dee18b6e9ad43ef9e3dfdcd, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51244}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51244/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 993d49441dee18b6e9ad43ef9e3dfdcd
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option()'><b>TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option</b><br>Test class: Test_PACK.Registration</td>
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: 123</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option(Registration.java:753)
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641677843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1641677843'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5933746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5933746'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option(Registration.java:753)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -488,481 +322,265 @@ Session ID: 993d49441dee18b6e9ad43ef9e3dfdcd
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number()'><b>TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number</b><br>Test class: Test_PACK.Registration<br>Parameters: 111</td>
-<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
-	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(Registration.java:457)
+<td title='Test_PACK.A_Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments()'><b>TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</b><br>Test class: Test_PACK.A_Registration</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at Test_PACK.A_Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments(A_Registration.java:924)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace66774422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace66774422'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace872917583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace872917583'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments(A_Registration.java:924)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage()'><b>TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage</b><br>Test class: Test_PACK.A_Registration</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at Test_PACK.A_Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage(A_Registration.java:895)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace872452937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace872452937'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage(A_Registration.java:895)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: ABCD456#</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8039120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8039120'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database()'><b>TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database</b><br>Test class: Test_PACK.A_Registration</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at Test_PACK.A_Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(A_Registration.java:587)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace115297013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace115297013'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database(A_Registration.java:587)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number()'><b>TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number</b><br>Test class: Test_PACK.A_Registration<br>Parameters: AAAAA</td>
+<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+	at Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(A_Registration.java:429)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2076462312", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076462312'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
 	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(Registration.java:457)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number()'><b>TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number</b><br>Test class: Test_PACK.Registration<br>Parameters: AAAAA</td>
-<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
-	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(Registration.java:457)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1335256857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1335256857'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at Test_PACK.Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(Registration.java:457)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed()'><b>TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0b34b44e62fc1e28bee47f3d2252d6ea, findElement {using=id, value=input-email}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51404}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51404/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b34b44e62fc1e28bee47f3d2252d6ea
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getDomProperty(Unknown Source)
-	at POM_PACK.B_Registration_page.get_getDomProperty_Email(B_Registration_page.java:198)
-	at Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(Registration.java:716)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1231493271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1231493271'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input\-email&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0b34b44e62fc1e28bee47f3d2252d6ea, findElement {using=id, value=input-email}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51404}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51404/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0b34b44e62fc1e28bee47f3d2252d6ea
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getDomProperty(Unknown Source)
-	at POM_PACK.B_Registration_page.get_getDomProperty_Email(B_Registration_page.java:198)
-	at Test_PACK.Registration.TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed(Registration.java:716)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcd123$</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d2aa390755e6a6dfa73f2bfb4edf6e38, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51343}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2aa390755e6a6dfa73f2bfb4edf6e38
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2040500590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2040500590'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d2aa390755e6a6dfa73f2bfb4edf6e38, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51343}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51343/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2aa390755e6a6dfa73f2bfb4edf6e38
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: 123</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:672)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596708569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1596708569'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:672)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()'><b>TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page(Registration.java:884)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2016512706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2016512706'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page(Registration.java:884)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>14</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage()'><b>TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage(Registration.java:919)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556272827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace556272827'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage(Registration.java:919)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility()'><b>TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility(Registration.java:763)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905594127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace905594127'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility(Registration.java:763)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
-<tr>
-<td title='Test_PACK.Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field()'><b>TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at Test_PACK.Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field(Registration.java:906)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace654821264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace654821264'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Somesh] but found [null],
-	expected [Landge] but found [null],
-	expected [SunJan05123015IST2025@gmail.com] but found [null],
-	expected [1] but found [0],
-	expected [Please enter an email address.] but found []
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at Test_PACK.Registration.TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field(Registration.java:906)
+	at Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(A_Registration.java:429)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -991,21 +609,187 @@ Session ID: d2aa390755e6a6dfa73f2bfb4edf6e38
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments()'><b>TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments</b><br>Test class: Test_PACK.Registration</td>
-<td><div><pre>org.testng.TestNGException: 
-Method public void Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments(java.lang.String) requires a @DataProvider named : DataProviderforTest
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: 12345</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212740759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace212740759'><pre>org.testng.TestNGException: 
-Method public void Test_PACK.Registration.TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments(java.lang.String) requires a @DataProvider named : DataProviderforTest
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:561)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1621202291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1621202291'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: abcdefghi</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556151572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556151572'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number()'><b>TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number</b><br>Test class: Test_PACK.A_Registration<br>Parameters: 111</td>
+<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+	at Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(A_Registration.java:429)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1018742990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1018742990'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/register] but found [https://tutorialsninja.com/demo/index.php?route=account/success]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Test_PACK.A_Registration.TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(A_Registration.java:429)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
+<tr>
+<td title='Test_PACK.A_Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility()'><b>TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility</b><br>Test class: Test_PACK.A_Registration</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at Test_PACK.A_Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility(A_Registration.java:753)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30270324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30270324'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility(A_Registration.java:753)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -1027,64 +811,43 @@ Method public void Test_PACK.Registration.TC_RF_027_Verify_Register_Account_func
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcd1234</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d8a57a594a60f7f16f7813a41381d5df, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51306}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51306/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a57a594a60f7f16f7813a41381d5df
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
+<td title='Test_PACK.A_Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()'><b>TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page</b><br>Test class: Test_PACK.A_Registration</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0],
+	expected [Register Account] but found [Account Login]
+	at Test_PACK.A_Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page(A_Registration.java:860)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace222927891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace222927891'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d8a57a594a60f7f16f7813a41381d5df, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51306}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51306/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d8a57a594a60f7f16f7813a41381d5df
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1321185349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321185349'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [Somesh] but found [null],
+	expected [Landge] but found [null],
+	expected [SunFeb02141524IST2025@gmail.com] but found [null],
+	expected [1] but found [0],
+	expected [Register Account] but found [Account Login]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page(A_Registration.java:860)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -1112,65 +875,32 @@ Session ID: d8a57a594a60f7f16f7813a41381d5df
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>11</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 <tr>
-<td title='Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.Registration<br>Parameters: abcdefghi</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f86f48c47a50d0bea534260c5faf511f, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51275}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f86f48c47a50d0bea534260c5faf511f
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
+<td title='Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards()'><b>TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards</b><br>Test class: Test_PACK.A_Registration<br>Parameters: abcd123$</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176376157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace176376157'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]&quot;}
-  (Session info: MicrosoftEdge=131.0.2903.112)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f86f48c47a50d0bea534260c5faf511f, findElement {using=xpath, value=//div[contains(text(),&apos;Password must be between 4 and 20 characters!&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51275}, msedge: {msedgedriverVersion: 131.0.2903.112 (16ab910a6e7..., userDataDir: C:\Users\somes\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 131.0.2903.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f86f48c47a50d0bea534260c5faf511f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-	at POM_PACK.B_Registration_page.Get_alertmeg_for_Password(B_Registration_page.java:141)
-	at Test_PACK.Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(Registration.java:669)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373254373", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373254373'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [somesh] but found [ somesh  ],
+	expected [landge] but found [ landge   ],
+	expected [9809074374] but found [  9809074374    ],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true],
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at Test_PACK.A_Registration.TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(A_Registration.java:649)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -1198,8 +928,8 @@ Session ID: f86f48c47a50d0bea534260c5faf511f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>12</td>
-<td>Test_PACK.Registration@4233e892</td></tr>
+<td>1</td>
+<td>Test_PACK.A_Registration@3ecd267f</td></tr>
 </table><p>
 </body>
 </html>

@@ -37,6 +37,7 @@ import POM_PACK.E_account_newsletter;
 import POM_PACK.F_LoginPage;
 import POM_PACK.G_Account_EditPage;
 import POM_PACK.Rootpage;
+import Utility_PACK.Datafaker;
 import Utility_PACK.PropertyFileUtil;
 import Utility_PACK.Reusable_details;
 import Utility_PACK.TakeScreenshotClass;
@@ -45,21 +46,32 @@ public class A_Registration extends base {
 
 	public static WebDriver driver;
 	public String browserName;
-	static SoftAssert Softass = new SoftAssert();
 	public static final Logger logger = LogManager.getLogger(A_Registration.class);
+	Datafaker datafaker = new Datafaker();
 
 	@BeforeMethod()
 	public void setUp() {
 		driver = setopenBrowserAndApplicationPageURL();
-		logger.debug("WebDriver initialized: " + (driver != null));
+		logger.info("WebDriver initialized: " + (driver != null));
+
+		logger.info("Browser name: " + base.browserName);
 
 		if (browserName == null || browserName.isEmpty()) {
 			logger.warn("Browser name not provided, defaulting to Chrome");
-			browserName = "chrome"; // Default to Chrome if browserName is not set
+			browserName = "chrome";
 		}
-		logger.info("Browser name: " + browserName);
 
 		navbarmenu = new A_Navigation_bar(driver);
+		RegistrationPG = new B_Registration_page(driver);
+		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+		AccountSuccessPage = new C_account_success_page(driver);
+		rootpage = new Rootpage(driver);
+		MyAC_Editpage = new G_Account_EditPage(driver);
+		NewsLetterpage = new E_account_newsletter(driver);
+		myAcpage = new D_MyAccount_page(driver);
+		loginpage = new F_LoginPage(driver);
+
+
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
 	}
@@ -73,8 +85,6 @@ public class A_Registration extends base {
 			logger.info("Test passed: " + result.getName());
 		}
 
-	//	Softass.assertAll();
-
 		if (driver != null) {
 			driver.quit();
 			logger.info("Driver closed");
@@ -84,15 +94,12 @@ public class A_Registration extends base {
 	}
 
 //=======================================================================================================	
-	@Test(priority = 1)
+	@Test
 	public void TC_RF_001_verify_Registering_Account_Using_MandatoryFields() {
 		logger.info("Starting test : TC_RF_001 ");
-		RegistrationPG = new B_Registration_page(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		AccountSuccessPage = new C_account_success_page(driver);
 
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -100,6 +107,7 @@ public class A_Registration extends base {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(AccountSuccessPage.GetTest_Success_messgae_on_Accountpage(),
 				"Your Account Has Been Created!");
 
@@ -109,12 +117,11 @@ public class A_Registration extends base {
 	}
 
 //================================================================================================	
-	@Test(priority = 27)
+	@Test
 	public void TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration() throws InterruptedException {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 
 		String emailText = Reusable_details.reusableEmail();
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
@@ -186,15 +193,11 @@ public class A_Registration extends base {
 	}
 
 //============================================================================================================	
-	@Test(priority = 3)
+	@Test
 	public void TC_RF_003_verifyRegisteringAnAccountproviding_all_fields() throws IOException {
 
-		RegistrationPG = new B_Registration_page(driver);
-		AccountSuccessPage = new C_account_success_page(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -202,7 +205,7 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(AccountSuccessPage.GetTest_Success_messgae_on_Accountpage(),
 				"Your Account Has Been Created!");
 
@@ -211,11 +214,11 @@ public class A_Registration extends base {
 	}
 
 //===============================================================================================
-	@Test(priority = 4)
+	@Test
 	public void TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field() {
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.clickON_Continue();
 
+		RegistrationPG.clickON_Continue();
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Privacy_Policy(),
 				"Warning: You must agree to the Privacy Policy!");
 
@@ -233,12 +236,11 @@ public class A_Registration extends base {
 	}
 
 //=========================================================================================
-	@Test(priority = 5)
+	@Test
 	public void TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES() throws InterruptedException {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -246,22 +248,21 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-		AccountSuccessPage = new C_account_success_page(driver);
 		AccountSuccessPage.click_ucc_ContinueCTA();
-		myAcpage = new D_MyAccount_page(driver);
+
 		myAcpage.click_MyAC_subsscribe_Opn();
-		NewsLetterpage = new E_account_newsletter(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(NewsLetterpage.isSelectedNewsleterpage_YES(), true);
 		Softass.assertEquals(NewsLetterpage.isSelectedNewsleterpage_NO(), false);
 		Softass.assertAll();
 	}
 
 //============================================================================================
-	@Test(priority = 6)
+	@Test
 	public void TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO() {
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -269,11 +270,12 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_NO();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-		AccountSuccessPage = new C_account_success_page(driver);
+
 		AccountSuccessPage.click_ucc_ContinueCTA();
 		myAcpage = new D_MyAccount_page(driver);
 		myAcpage.click_MyAC_subsscribe_Opn();
-		NewsLetterpage = new E_account_newsletter(driver);
+
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(NewsLetterpage.isSelectedNewsleterpage_YES(), false);
 		Softass.assertEquals(NewsLetterpage.isSelectedNewsleterpage_NO(), true);
 		Softass.assertAll();
@@ -281,17 +283,17 @@ public class A_Registration extends base {
 	}
 
 //================================================================================================
-	@Test(priority = 7)
+	@Test
 	public void TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page() {
 
-		RegistrationPG = new B_Registration_page(driver);
-		rootpage = new Rootpage(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 //----------------------------------------------------------------------------------------
-		navbarmenu = new A_Navigation_bar(driver);
+
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_NavBara_Register_MyAccount();
+
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 //--------------------------------------------------------------------------------------
@@ -299,7 +301,6 @@ public class A_Registration extends base {
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_Login_MyAccount();
 
-		loginpage = new F_LoginPage(driver);
 		loginpage.click_ContinueBBTN_loginpage();
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
@@ -307,7 +308,6 @@ public class A_Registration extends base {
 		driver.get(PropertyFileUtil.getProperty("baseUrl"));
 		navbarmenu.click_NavBara_MyAccountCTA();
 		navbarmenu.click_Login_MyAccount();
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 		RHS_Menu_bar.click_register_rightbar_register();
 		Softass.assertEquals(RegistrationPG.Get_Text_RegisterAccount(), "Register Account");
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
@@ -315,14 +315,11 @@ public class A_Registration extends base {
 	}
 
 //=========================================================================================
-	@Test(priority = 8)
+	@Test
 	public void TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields() {
 
-		RegistrationPG = new B_Registration_page(driver);
-
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -332,19 +329,16 @@ public class A_Registration extends base {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
-		Assert.assertEquals(RegistrationPG.Get_alrtConfirmPassword(),
-				"Password confirmation does not match password!");
-
+		Assert.assertEquals(RegistrationPG.Get_alrtConfirmPassword(), "Password confirmation does not match password!");
 
 	}
 
 //============================================================================================================
-	@Test(priority = 9)
+	@Test
 	public void TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details() {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(PropertyFileUtil.getProperty("ExEmail"));
 		RegistrationPG.Send_Mobile(PropertyFileUtil.getProperty("Extelephone"));
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -358,12 +352,11 @@ public class A_Registration extends base {
 	}
 
 //=================================================================================================
-	@Test(priority = 10)
+	@Test
 	public void TC_RF_010_Verify_registraton_With_invalidEmail() throws InterruptedException {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(PropertyFileUtil.getProperty("Invalidemail01"));
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -373,6 +366,7 @@ public class A_Registration extends base {
 		RegistrationPG.clickON_Continue();
 
 		System.out.println("Validation message for Email - amotoori---->" + RegistrationPG.get_getDomProperty_Email());
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.get_getDomProperty_Email(),
 				"Please include an '@' in the email address. 'amotoori' is missing an '@'.");
 
@@ -411,12 +405,11 @@ public class A_Registration extends base {
 	}
 //====================================================================================================
 
-	@Test(dataProvider = "InvalidMobilenumber", priority = 11)
+	@Test(dataProvider = "InvalidMobilenumber")
 	public void TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number(String invalidMobile) {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(PropertyFileUtil.getProperty("InvalidTelephone"));
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -424,8 +417,6 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-
-		rootpage = new Rootpage(driver);
 
 		Assert.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 
@@ -439,15 +430,13 @@ public class A_Registration extends base {
 	}
 
 //==================================================================================================================
-	@Test(priority = 12)
+	@Test
 	public void TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys() throws InterruptedException {
 
-		RegistrationPG = new B_Registration_page(driver);
-		rootpage = new Rootpage(driver);
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 23);
-		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("FirstName"));
+		rootpage.typeTextUsingActions(datafaker.faker_FirstName());
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
-		rootpage.typeTextUsingActions(PropertyFileUtil.getProperty("LastName"));
+		rootpage.typeTextUsingActions(datafaker.faker_lastname());
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
 		rootpage.typeTextUsingActions(Reusable_details.reusableEmail());
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
@@ -461,21 +450,19 @@ public class A_Registration extends base {
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.TAB, 1);
 		rootpage.ClickKeyoardKeyMultipleTimes(Keys.ENTER, 1);
 
-		AccountSuccessPage = new C_account_success_page(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(AccountSuccessPage.GetTest_Success_messgae_on_Accountpage(),
 				"Your Account Has Been Created!");
-
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
 
 		Softass.assertEquals(RHS_Menu_bar.Logout_RHSmenu_isDisplayed(), true);
 		Softass.assertAll();
 	}
+
 //===============================================================================================
-	@Test(priority = 13)
+	@Test
 	public static void TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders() {
 
-		RegistrationPG = new B_Registration_page(driver);
-
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.get_placeholder_firstname(), "First Name");
 		Softass.assertEquals(RegistrationPG.get_placeholder_lastname(), "Last Name");
 		Softass.assertEquals(RegistrationPG.get_placeholder_email(), "E-Mail");
@@ -486,7 +473,7 @@ public class A_Registration extends base {
 	}
 
 //========================================================================================================
-	@Test(priority = 14)
+	@Test
 	public static void TC_RF_014_Verify_all_mandatory_fields_in_Register_Account() {
 
 		String expectedContent = "\"* \"";
@@ -502,7 +489,7 @@ public class A_Registration extends base {
 
 		String ashstrictcolorFN = (String) jsee.executeScript(
 				"return window.getComputedStyle(arguments[0],'::before').getPropertyValue('color');", firstname);
-
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(ashstrictFN, expectedContent);
 		Softass.assertEquals(ashstrictcolorFN, expectedColor);
 		Softass.assertAll();
@@ -510,11 +497,11 @@ public class A_Registration extends base {
 	}
 //================================================================================================
 
-	@Test(priority = 27)
+	@Test
 	public void TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database() {
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 
 		String enteredEmailData = Reusable_details.reusableEmail();
 		RegistrationPG.Send_Email(enteredEmailData);
@@ -581,6 +568,7 @@ public class A_Registration extends base {
 				ex.printStackTrace();
 			}
 		}
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(firstName, PropertyFileUtil.getProperty("FirstName"));
 		Softass.assertEquals(lastName, PropertyFileUtil.getProperty("LastName"));
 		Softass.assertEquals(email, enteredEmailData);
@@ -589,10 +577,9 @@ public class A_Registration extends base {
 	}
 
 //==================================================================================================
-	@Test(priority = 16)
+	@Test
 	public void TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces() {
 
-		RegistrationPG = new B_Registration_page(driver);
 		RegistrationPG.Send_FirstName("     ");
 		RegistrationPG.Send_LastName("     ");
 		RegistrationPG.Send_Email("     ");
@@ -602,30 +589,28 @@ public class A_Registration extends base {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
-		if (browserName != null && (browserName.equals("chrome") || browserName.equals("Edge"))) {
-			Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Firstname(),
+		if ((browserName.equalsIgnoreCase("chrome") || browserName.equalsIgnoreCase("Edge"))) {
+			Assert.assertEquals(RegistrationPG.Get_alertmeg_for_Firstname(),
 					"First Name must be between 1 and 32 characters!");
-			Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Lastname(),
+			Assert.assertEquals(RegistrationPG.Get_alertmeg_for_Lastname(),
 					"Last Name must be between 1 and 32 characters!");
-			Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Email(),
-					"E-Mail Address does not appear to be valid!");
+			Assert.assertEquals(RegistrationPG.Get_alertmeg_for_Email(), "E-Mail Address does not appear to be valid!");
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			Assert.assertEquals(RegistrationPG.get_getDomProperty_Email(), "Please enter an email address.");
 		} else {
-			Softass.assertEquals(RegistrationPG.get_getDomProperty_Email(), "Please enter an email address.");
+			System.out.println("There is issue in line tc016");
 		}
-		Softass.assertAll();
+
+		// Softass.assertAll();
 	}
 
 //==================================================================================================================
-	@Test(dataProvider = "passwordcomplixitycheck", priority = 17)
+	@Test(dataProvider = "passwordcomplixitycheck")
 	public void TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards(
 			String password) {
 
-		RegistrationPG = new B_Registration_page(driver);
-		rootpage = new Rootpage(driver);
-		AccountSuccessPage = new C_account_success_page(driver);
-
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(password);
@@ -633,15 +618,14 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-
-		if(rootpage.GetPageTitle().equalsIgnoreCase("Register Account")) {
-		Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Password(),
-				"Password must be between 4 and 20 characters!");
-		}
-		else if (rootpage.GetPageTitle().equalsIgnoreCase("Your Account Has Been Created!")) {
+		SoftAssert Softass = new SoftAssert();
+		if (rootpage.GetPageTitle().equalsIgnoreCase("Register Account")) {
+			Softass.assertEquals(RegistrationPG.Get_alertmeg_for_Password(),
+					"Password must be between 4 and 20 characters!");
+		} else if (rootpage.GetPageTitle().equalsIgnoreCase("Your Account Has Been Created!")) {
 			Softass.assertFalse(AccountSuccessPage.IsDisply_Success_messgae_on_Accountpage());
-		}
-		else System.out.println("there something wrong in assertion");
+		} else
+			System.out.println("there something wrong in assertion");
 		Softass.assertAll();
 	}
 
@@ -654,10 +638,8 @@ public class A_Registration extends base {
 	}
 
 //======================================================================================================	
-	@Test(priority = 27)
+	@Test
 	public void TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed() {
-
-		RegistrationPG = new B_Registration_page(driver);
 
 		String firstname = " somesh  ";
 		String Lastname = " landge   ";
@@ -679,8 +661,9 @@ public class A_Registration extends base {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 		logger.info("navifated to edit account page 7");
+		SoftAssert Softass = new SoftAssert();
 
-		if ((browserName.equals("chrome") || browserName.equals("Edge"))) {
+		if ((browserName.equalsIgnoreCase("chrome") || browserName.equalsIgnoreCase("Edge"))) {
 
 			logger.info("Navigated to account success page");
 			AccountSuccessPage = new C_account_success_page(driver);
@@ -692,24 +675,25 @@ public class A_Registration extends base {
 			logger.info("navifated to edit account page");
 
 			MyAC_Editpage = new G_Account_EditPage(driver);
+
 			Softass.assertEquals(MyAC_Editpage.getFirstName_Editpg(), firstname.trim());
 			Softass.assertEquals(MyAC_Editpage.getLastName_Editpg(), Lastname.trim());
 			Softass.assertEquals(MyAC_Editpage.getEmail_Editpg(), Email.trim());
 			Softass.assertEquals(MyAC_Editpage.getMobile_Editpg(), Mobile.trim());
-		} else {
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			logger.info("enter into else statement ");
 			Softass.assertEquals(RegistrationPG.get_getDomProperty_Email(), "Please enter an email address.");
 			logger.info(
 					"Test excecuted in firefox - Registration is not allowed due heading and tailing space in email");
-		}
+		} else
+			System.out.println("there something wrong in assertion");
 		Softass.assertAll();
 	}
 
 //==============================================================================================
-	@Test(priority = 20)
+	@Test
 	public void TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default() {
 
-		RegistrationPG = new B_Registration_page(driver);
 		RegistrationPG.IsDisclaimerSelected();
 
 		Assert.assertEquals(RegistrationPG.IsDisclaimerSelected(), false);
@@ -717,12 +701,11 @@ public class A_Registration extends base {
 	}
 
 //==========================================================================================
-	@Test(priority = 21)
+	@Test
 	public void TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option() {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -730,7 +713,7 @@ public class A_Registration extends base {
 		RegistrationPG.select_SubscribeRadio_YES();
 		RegistrationPG.clickON_Continue();
 
-		rootpage = new Rootpage(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(rootpage.GetCurrentURL(), PropertyFileUtil.getProperty("register_rightbox"));
 
 		Softass.assertEquals(RegistrationPG.Get_WorningDisclaimer(), "Warning: You must agree to the Privacy Policy!");
@@ -738,24 +721,21 @@ public class A_Registration extends base {
 	}
 
 //========================================================================================
-	@Test(priority = 22)
+	@Test
 	public void TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility() {
 
-		RegistrationPG = new B_Registration_page(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.get_DomAttributfotVisibility_password(), "password");
 		Softass.assertEquals(RegistrationPG.get_DomAttributfotVisibility_CNF_password(), "password");
 		Softass.assertAll();
 	}
 
 //================================================================================================
-	@Test(priority = 23)
+	@Test
 	public void TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page()
 			throws InterruptedException {
 
-		navbarmenu = new A_Navigation_bar(driver);
-		rootpage = new Rootpage(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
-		RegistrationPG = new B_Registration_page(driver);
+		SoftAssert Softass = new SoftAssert();
 
 		navbarmenu.click_NavBara_contactust();
 		Softass.assertEquals(rootpage.GetPageTitle(), "Contact Us");
@@ -855,18 +835,17 @@ public class A_Registration extends base {
 	}
 
 //===================================================================================================
-	@Test(priority = 24)
+	@Test
 	public void TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field() {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
-		rootpage = new Rootpage(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertEquals(RegistrationPG.Get_Worning_NOConfiPassword(),
 				"Password confirmation does not match password!");
 
@@ -876,12 +855,10 @@ public class A_Registration extends base {
 	}
 
 //======================================================================================================
-	@Test(priority = 25)
+	@Test
 	public void TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage() {
 
-		RegistrationPG = new B_Registration_page(driver);
-
-		rootpage = new Rootpage(driver);
+		SoftAssert Softass = new SoftAssert();
 
 		Softass.assertEquals(RegistrationPG.isDisplyBreadcrum_Register(), true);
 		Softass.assertEquals(rootpage.GetPageTitle(), "Register Account");
@@ -890,7 +867,7 @@ public class A_Registration extends base {
 	}
 
 //=======================================================================
-	@Test(priority = 26)
+	@Test
 	public void TC_RF_026_Verify_the_UI_of_Register_Account_page() throws IOException {
 
 		TakeScreenshotClass.takeScreenshot("registration page1", driver);
@@ -898,12 +875,11 @@ public class A_Registration extends base {
 	}
 
 //==========================================================================
-	@Test( priority = 26)
+	@Test
 	public void TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments() {
 
-		RegistrationPG = new B_Registration_page(driver);
-		RegistrationPG.Send_FirstName(PropertyFileUtil.getProperty("FirstName"));
-		RegistrationPG.Send_LastName(PropertyFileUtil.getProperty("LastName"));
+		RegistrationPG.Send_FirstName(datafaker.faker_FirstName());
+		RegistrationPG.Send_LastName(datafaker.faker_lastname());
 		RegistrationPG.Send_Email(Reusable_details.reusableEmail());
 		RegistrationPG.Send_Mobile(Reusable_details.reusableMobile());
 		RegistrationPG.Send_password(PropertyFileUtil.getProperty("ValidPasword"));
@@ -911,8 +887,7 @@ public class A_Registration extends base {
 		RegistrationPG.Select_disclaimer();
 		RegistrationPG.clickON_Continue();
 
-		AccountSuccessPage = new C_account_success_page(driver);
-		RHS_Menu_bar = new D_RHS_Menu_bar(driver);
+		SoftAssert Softass = new SoftAssert();
 		Softass.assertTrue(RHS_Menu_bar.Logout_RHSmenu_isDisplayed());
 		Softass.assertTrue(AccountSuccessPage.IsDisply_Success_messgae_on_Accountpage());
 		Softass.assertAll();

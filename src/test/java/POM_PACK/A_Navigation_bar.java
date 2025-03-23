@@ -2,6 +2,7 @@ package POM_PACK;
 
 import java.time.Duration;
 
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -154,6 +155,12 @@ public class A_Navigation_bar {
 
 	public void click_breadc_register() {
 		breadc_register.click();
+	}
+	
+	public  String GetPlaceholderForSearch() {
+		
+	  return Header_searchbox.getDomProperty("placeholder");
+		
 	}
 
 }

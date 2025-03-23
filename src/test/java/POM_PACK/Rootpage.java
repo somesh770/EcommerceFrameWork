@@ -1,7 +1,10 @@
 package POM_PACK;
 
+import java.util.List;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
@@ -67,6 +70,18 @@ public class Rootpage extends base {
 				.sendKeys("v") // Paste text (Ctrl+V)
 				.keyUp(Keys.CONTROL) // Release Ctrl
 				.build().perform();
+	}
+
+	public static int GetElementCount(List<WebElement> elements) {
+		int count = 0;
+		try {
+			count = elements.size();
+
+		} catch (Exception e) {
+			count = 0;
+		}
+		return 0;
+
 	}
 
 }

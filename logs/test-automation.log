@@ -3012,3 +3012,1729 @@
 2025-02-02 13:03:07.479 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
 2025-02-02 13:03:11.145 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
 2025-02-02 13:03:11.437 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:05:52.016 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:06:13.092 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:06:13.093 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:06:14.985 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:06:17.485 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:06:17.864 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:06:17.868 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:06:24.089 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:06:41.264 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 13:06:41.682 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:06:41.684 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:09:03.141 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:09:19.508 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:09:19.509 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:09:37.670 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:09:41.073 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:09:41.073 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:09:47.296 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:09:48.994 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:09:49.334 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:09:49.338 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:09:54.553 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:09:58.630 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 13:09:58.962 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:09:58.965 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:03.872 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:05.979 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 13:10:06.298 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:06.301 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:09.536 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:13.432 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 13:10:13.721 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:13.723 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:16.757 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:20.253 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 13:10:20.582 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:20.584 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:23.897 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:29.439 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 13:10:29.727 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:29.728 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:35.527 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:37.976 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 13:10:38.300 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:38.301 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:10:47.807 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:10:50.006 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 13:10:50.287 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:10:50.289 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:11:01.140 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:11:10.770 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 13:11:11.130 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:11:11.133 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:11:16.488 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:11:21.693 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:11:21.999 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:11:22.000 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:11:32.601 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:11:36.258 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:11:36.544 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:11:36.545 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:11:45.043 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:11:51.197 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 13:11:51.528 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:11:51.529 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:11:58.235 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:02.272 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 13:12:02.551 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:02.552 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:05.601 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:06.396 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 13:12:06.655 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:06.656 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:09.182 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:11.962 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 13:12:12.286 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:12.287 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:17.598 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:20.913 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:12:21.215 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:21.216 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:24.101 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:26.929 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:12:27.161 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:27.201 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:29.088 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:33.673 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:12:33.935 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:33.935 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:36.869 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:40.276 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:12:40.549 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:40.550 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:43.035 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:12:47.302 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:12:47.592 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:12:47.593 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:12:58.473 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:13:02.245 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:13:02.556 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:13:02.558 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:13:10.926 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:13:13.574 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 13:13:13.858 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:13:13.859 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:13:19.069 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:13:23.707 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 13:13:23.950 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:13:23.952 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:13:26.782 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:13:27.872 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 13:13:28.114 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:13:28.116 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:13:39.920 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:13:57.036 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 13:13:57.389 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:13:57.391 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:13:59.447 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:14:10.250 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 13:14:10.540 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:14:10.541 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:14:21.192 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:14:23.692 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 13:14:24.025 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:14:24.027 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:14:33.765 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:14:35.487 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 13:14:35.819 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:14:35.821 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:14:41.375 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:14:45.572 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 13:14:45.857 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:14:45.858 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:14:48.430 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:14:54.839 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 13:14:55.217 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:14:55.218 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:14:58.261 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:15:00.586 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 13:15:00.855 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:15:00.856 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:15:04.799 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:15:08.219 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 13:15:08.326 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 13:15:08.443 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 13:15:08.564 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 13:15:08.668 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 13:15:08.771 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 13:15:10.101 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 13:15:10.101 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 13:15:10.476 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 13:15:11.229 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 13:15:11.342 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 13:15:11.642 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:19:37.531 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:19:40.624 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:19:40.624 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:19:42.657 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 13:19:42.943 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:20:04.707 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:20:08.019 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:20:08.019 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:20:09.153 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 13:20:09.450 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:21:28.191 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:21:34.671 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 13:21:34.671 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:21:35.802 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 13:21:35.914 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 13:21:36.017 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 13:21:36.116 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 13:21:36.217 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 13:21:36.344 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 13:21:37.187 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 13:21:37.187 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 13:21:37.539 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 13:21:37.975 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 13:21:38.116 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 13:21:38.386 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:22:39.932 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:22:43.529 [main] INFO  Test_PACK.A_Registration - Browser name: null
+2025-02-02 13:22:46.391 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 13:22:46.689 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:23:33.361 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:23:36.503 [main] INFO  Test_PACK.A_Registration - Browser name: null
+2025-02-02 13:23:37.208 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:23:39.059 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:23:39.363 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:26:38.738 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:26:43.831 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_002_verifyLoggingIntoApplicationUsingInvalidCredentials
+2025-02-02 13:26:44.138 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-02 13:27:10.562 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:27:15.336 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_002_verifyLoggingIntoApplicationUsingInvalidCredentials
+2025-02-02 13:27:15.653 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-02 13:29:07.565 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:29:12.807 [main] INFO  Test_PACK.A_Registration - Browser name: null
+2025-02-02 13:29:13.852 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:29:15.554 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:29:15.829 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:30:24.427 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:30:29.755 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:30:30.969 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:30:32.778 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:30:33.134 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:31:39.549 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:31:42.650 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-02 13:31:44.451 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-02 13:31:44.749 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-02 13:33:17.675 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:33:22.509 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:33:24.088 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:33:26.423 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:33:26.757 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:33:26.763 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:33:35.811 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:33:40.399 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 13:33:40.698 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:33:40.700 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:33:43.921 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:33:45.415 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 13:33:45.725 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:33:45.726 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:33:50.198 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:33:53.955 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 13:33:54.176 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:33:54.178 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:33:57.025 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:33:59.968 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 13:34:00.201 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:00.203 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:04.635 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:07.437 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 13:34:07.637 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:07.638 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:10.003 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:11.781 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 13:34:11.996 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:11.997 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:18.124 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:20.171 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 13:34:20.422 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:20.422 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:22.806 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:29.263 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 13:34:29.448 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:29.451 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:32.426 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:34.793 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:34:35.012 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:35.013 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:37.090 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:39.130 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:34:39.390 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:39.391 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:41.469 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:43.227 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 13:34:43.395 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:43.396 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:45.607 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:46.352 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 13:34:46.510 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:46.510 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:48.306 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:48.862 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 13:34:49.029 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:49.031 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:50.855 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:52.177 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 13:34:52.348 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:52.351 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:34:54.277 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:34:55.838 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:34:55.994 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:34:55.995 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:01.505 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:05.587 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:35:05.748 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:05.748 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:07.988 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:09.765 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:35:09.936 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:09.938 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:11.687 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:13.317 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:35:13.472 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:13.472 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:20.085 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:22.912 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:35:23.076 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:23.076 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:25.074 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:26.988 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:35:27.166 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:27.166 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:29.674 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:31.152 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 13:35:31.314 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:31.314 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:33.107 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:33.615 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 13:35:33.776 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:33.776 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:35.771 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:36.409 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 13:35:36.588 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:36.588 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:39.138 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:39.929 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 13:35:40.095 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:40.095 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:43.623 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:53.918 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 13:35:54.077 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:54.077 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:35:56.399 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:35:57.878 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 13:35:58.050 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:35:58.050 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:36:02.575 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:36:03.598 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 13:36:03.813 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:36:03.813 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:36:05.697 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:36:07.924 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 13:36:08.136 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:36:08.137 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:36:09.914 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:36:15.057 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 13:36:15.233 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:36:15.234 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:36:18.265 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:36:19.777 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 13:36:19.984 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:36:19.985 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:36:21.826 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:36:22.480 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 13:36:22.551 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 13:36:22.624 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 13:36:22.748 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 13:36:22.821 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 13:36:22.946 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 13:36:23.646 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 13:36:23.650 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 13:36:23.851 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:45:45.670 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:45:48.738 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:45:51.016 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:45:52.509 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:45:52.724 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:45:52.725 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:45:54.507 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:00.148 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 13:46:00.384 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:00.384 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:05.988 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:08.760 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 13:46:08.958 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:08.958 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:10.697 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:11.654 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 13:46:11.855 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:11.856 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:16.498 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:18.875 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 13:46:19.038 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:19.039 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:21.267 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:23.827 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 13:46:24.015 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:24.015 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:25.921 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:29.267 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 13:46:29.455 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:29.456 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:34.059 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:36.255 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 13:46:36.471 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:36.471 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:38.358 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:40.132 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 13:46:40.302 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:40.303 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:42.910 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:50.495 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 13:46:50.709 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:50.712 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:52.835 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:54.996 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:46:55.198 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:55.199 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:46:57.082 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:46:59.146 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 13:46:59.392 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:46:59.393 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:01.371 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:03.634 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 13:47:03.835 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:03.835 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:06.158 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:06.968 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 13:47:07.179 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:07.179 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:09.230 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:09.790 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 13:47:10.003 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:10.007 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:13.242 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:14.880 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 13:47:15.102 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:15.102 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:20.608 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:22.216 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 13:47:22.403 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:22.404 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:24.699 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:26.519 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:26.709 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:26.709 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:28.762 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:31.433 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:31.671 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:31.671 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:33.766 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:36.526 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:36.822 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:36.822 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:38.800 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:41.211 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:41.389 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:41.389 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:43.302 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:45.390 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:45.591 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:45.592 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:47.618 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:49.746 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 13:47:49.966 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:49.967 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:52.469 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:53.106 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 13:47:53.214 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 13:47:53.396 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 13:47:53.510 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 13:47:53.617 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 13:47:53.715 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 13:47:55.231 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 13:47:55.233 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 13:47:55.419 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:55.420 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:47:57.497 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:47:57.978 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 13:47:58.164 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:47:58.164 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:01.028 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:03.886 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 13:48:04.075 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:04.075 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:06.194 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:07.306 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 13:48:07.500 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:07.501 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:09.462 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:20.194 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 13:48:20.435 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:20.435 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:22.560 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:24.451 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 13:48:24.652 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:24.653 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:26.572 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:27.451 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 13:48:27.693 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:27.697 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:29.947 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:30.936 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 13:48:31.164 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:48:31.165 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:48:33.871 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:48:35.816 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 13:48:36.056 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:53:12.699 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:53:15.268 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:53:15.268 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:53:15.785 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:53:16.797 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:53:16.968 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:53:37.008 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:53:39.586 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:53:39.586 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:53:41.094 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 13:53:41.362 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:55:01.087 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:55:04.846 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:55:04.846 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:55:07.398 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 13:55:07.637 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 13:56:59.302 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:57:00.693 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:57:00.693 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:57:13.089 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:57:14.476 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:57:14.476 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:58:28.872 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:58:30.291 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:58:30.291 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:59:17.009 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 13:59:20.787 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 13:59:20.787 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 13:59:21.542 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 13:59:22.892 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 13:59:23.118 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:00:24.216 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:00:26.741 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:00:26.742 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:00:26.742 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 14:00:28.681 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 14:00:28.932 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:01:52.954 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:01:55.273 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:01:55.273 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:01:56.843 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 14:01:57.115 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:29.417 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:31.932 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:31.932 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:02:31.932 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 14:02:32.458 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 14:02:33.879 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 14:02:34.131 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:34.133 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:37.997 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:37.997 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:02:43.872 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 14:02:44.067 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:44.068 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:45.985 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:45.986 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:02:47.930 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 14:02:48.141 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:48.142 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:50.081 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:50.081 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:02:51.188 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 14:02:51.394 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:51.396 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:53.269 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:53.270 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:02:56.173 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 14:02:56.402 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:02:56.402 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:02:58.554 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:02:58.554 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:01.548 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 14:03:01.801 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:01.801 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:04.642 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:04.642 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:07.369 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 14:03:07.617 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:07.617 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:09.624 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:09.624 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:11.503 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 14:03:11.728 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:11.729 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:15.051 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:15.051 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:16.899 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 14:03:17.142 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:17.142 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:19.726 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:19.726 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:26.241 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 14:03:26.472 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:26.474 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:28.540 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:28.540 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:30.629 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:03:30.886 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:30.886 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:33.064 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:33.064 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:34.938 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:03:35.178 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:35.178 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:37.026 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:37.027 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:38.924 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 14:03:39.148 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:39.148 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:42.470 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:42.470 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:43.545 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 14:03:43.797 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:43.797 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:45.592 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:45.592 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:46.316 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 14:03:46.545 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:46.546 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:50.410 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:50.410 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:03:52.246 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 14:03:52.465 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:03:52.466 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:03:58.851 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:03:58.851 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:01.020 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 14:04:01.245 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:01.246 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:03.107 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:03.107 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:04.793 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:05.019 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:05.020 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:06.933 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:06.933 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:08.769 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:08.996 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:08.996 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:11.147 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:11.147 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:14.075 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:14.240 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:14.240 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:16.854 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:16.854 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:18.720 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:18.882 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:18.882 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:21.569 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:21.570 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:23.495 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:23.691 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:23.691 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:25.618 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:25.618 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:28.540 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:04:28.717 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:28.717 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:31.661 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:31.661 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:32.462 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 14:04:32.531 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 14:04:32.627 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 14:04:32.692 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 14:04:32.748 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 14:04:32.813 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 14:04:33.575 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 14:04:33.575 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 14:04:33.867 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 14:04:34.189 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 14:04:34.294 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 14:04:34.533 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:34.534 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:38.351 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:38.352 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:39.914 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 14:04:40.109 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:40.109 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:42.128 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:42.128 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:43.895 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 14:04:44.184 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:44.184 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:46.513 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:46.513 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:04:47.260 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 14:04:47.467 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:04:47.467 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:04:49.799 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:04:49.799 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:05:01.589 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 14:05:01.799 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:05:01.800 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:05:04.714 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:05:04.715 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:05:06.607 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 14:05:06.851 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:05:06.852 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:05:10.457 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:05:10.458 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:05:11.026 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 14:05:11.246 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:05:11.247 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:05:13.159 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:05:13.159 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:05:13.943 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 14:05:14.170 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:05:14.171 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:05:16.067 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:05:16.069 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:05:17.866 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 14:05:18.119 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:09.726 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:12.367 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:12.367 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:12.367 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 14:08:12.967 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 14:08:14.917 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 14:08:15.170 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:15.171 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:18.241 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:18.241 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:23.740 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 14:08:23.938 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:23.938 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:25.797 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:25.797 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:27.910 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 14:08:28.142 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:28.142 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:30.413 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:30.413 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:31.595 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 14:08:31.819 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:31.819 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:33.913 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:33.913 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:36.532 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 14:08:36.792 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:36.793 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:38.649 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:38.649 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:42.044 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 14:08:42.267 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:42.268 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:48.575 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:48.575 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:51.787 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 14:08:52.029 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:52.030 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:54.758 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:54.758 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:08:56.778 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 14:08:57.012 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:08:57.013 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:08:59.303 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:08:59.304 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:01.061 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 14:09:01.321 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:01.327 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:03.729 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:03.729 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:10.693 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 14:09:10.941 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:10.943 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:19.102 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:19.102 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:23.382 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:09:23.612 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:23.612 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:29.636 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:29.636 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:32.767 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:09:33.068 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:33.068 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:39.584 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:39.584 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:42.495 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 14:09:42.728 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:42.729 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:48.688 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:48.688 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:49.715 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 14:09:49.935 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:49.937 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:52.296 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:52.296 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:55.508 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 14:09:55.739 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:55.740 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:09:58.253 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:09:58.253 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:09:59.739 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 14:09:59.972 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:09:59.972 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:02.984 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:02.984 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:06.582 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 14:10:06.820 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:06.821 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:14.958 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:14.958 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:18.360 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:18.588 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:18.588 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:28.419 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:28.419 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:30.743 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:30.972 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:30.972 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:33.994 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:33.994 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:36.391 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:36.624 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:36.624 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:38.709 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:38.709 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:41.505 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:41.715 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:41.716 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:44.710 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:44.711 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:46.952 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:47.187 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:47.189 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:10:55.232 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:10:55.232 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:10:58.481 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:10:58.731 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:10:58.731 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:00.707 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:00.707 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:01.334 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 14:11:01.431 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 14:11:01.556 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 14:11:01.638 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 14:11:01.709 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 14:11:01.771 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 14:11:02.873 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 14:11:02.874 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 14:11:03.281 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 14:11:03.602 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 14:11:03.663 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 14:11:03.930 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:03.931 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:06.757 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:06.757 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:07.601 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 14:11:07.788 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:07.789 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:09.846 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:09.847 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:11.326 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 14:11:11.524 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:11.525 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:13.483 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:13.483 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:14.349 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 14:11:14.578 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:14.578 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:16.682 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:16.682 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:27.898 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 14:11:28.093 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:28.094 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:32.442 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:32.442 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:34.852 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 14:11:35.079 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:35.079 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:41.396 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:41.396 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:42.357 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 14:11:42.597 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:42.597 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:44.704 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:44.704 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:45.733 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 14:11:45.939 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:11:45.939 [main] INFO  Base_pack.base - Starting test execution
+2025-02-02 14:11:48.109 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:11:48.109 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:11:50.015 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 14:11:50.283 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:30.961 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:30.963 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:30.963 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 14:14:31.824 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 14:14:31.936 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 14:14:32.130 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 14:14:32.246 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 14:14:32.333 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 14:14:32.388 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 14:14:33.244 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 14:14:33.244 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 14:14:33.527 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 14:14:33.782 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 14:14:33.861 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 14:14:34.077 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:36.993 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:36.994 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:38.429 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 14:14:38.676 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:40.537 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:40.537 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:42.782 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:14:43.020 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:46.021 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:46.021 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:47.883 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:14:48.123 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:50.418 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:50.418 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:52.758 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:14:52.998 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:14:57.450 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:14:57.450 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:14:59.675 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:14:59.906 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:02.001 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:02.001 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:05.820 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:15:06.068 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:10.521 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:10.521 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:12.911 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:15:13.128 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:15.030 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:15.030 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:17.061 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:15:17.320 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:19.372 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:19.373 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:21.272 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:15:21.519 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:23.461 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:23.461 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:25.136 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 14:15:25.367 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:33.335 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:33.336 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:35.161 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 14:15:35.396 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:41.610 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:41.610 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:42.600 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 14:15:42.866 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:46.570 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:46.570 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:47.432 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 14:15:47.657 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:52.976 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:52.976 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:15:55.090 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 14:15:55.326 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:15:59.814 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:15:59.814 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:16:12.513 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 14:16:12.721 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:28:36.299 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:28:36.301 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:28:36.301 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-02 14:28:37.203 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-02 14:28:38.615 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-02 14:28:38.887 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:28:43.819 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:28:43.819 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:28:49.320 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-02 14:28:49.524 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:28:51.626 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:28:51.626 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:28:53.367 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-02 14:28:53.586 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:28:55.573 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:28:55.573 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:28:56.694 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-02 14:28:56.868 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:28:58.937 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:28:58.938 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:01.448 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-02 14:29:01.723 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:03.851 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:03.851 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:06.399 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-02 14:29:06.661 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:08.643 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:08.643 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:11.088 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-02 14:29:11.333 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:13.203 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:13.203 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:14.846 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-02 14:29:15.120 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:17.790 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:17.791 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:19.895 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-02 14:29:20.171 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:22.338 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:22.338 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:28.754 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-02 14:29:28.988 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:34.218 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:34.218 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:36.898 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:29:37.126 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:39.184 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:39.185 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:41.092 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-02 14:29:41.272 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:43.182 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:43.183 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:44.964 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-02 14:29:45.149 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:47.106 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:47.106 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:47.859 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-02 14:29:48.013 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:49.961 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:49.961 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:50.501 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-02 14:29:50.675 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:52.659 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:52.659 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:54.255 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-02 14:29:54.439 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:56.291 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:56.292 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:29:57.817 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-02 14:29:57.984 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:29:59.792 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:29:59.792 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:01.346 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:01.511 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:05.353 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:05.353 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:08.085 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:08.238 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:11.162 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:11.162 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:12.920 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:13.100 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:15.827 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:15.827 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:17.879 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:18.054 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:20.432 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:20.432 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:22.334 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:22.496 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:27.368 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:27.368 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:30.021 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-02 14:30:30.210 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:32.098 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:32.098 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:34.824 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-02 14:30:34.899 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-02 14:30:34.986 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-02 14:30:35.056 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-02 14:30:35.120 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-02 14:30:35.187 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-02 14:30:35.924 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-02 14:30:35.925 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-02 14:30:36.162 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-02 14:30:36.446 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-02 14:30:36.521 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-02 14:30:36.694 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:38.758 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:38.758 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:39.375 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-02 14:30:39.545 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:41.386 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:41.386 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:42.943 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-02 14:30:43.102 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:44.962 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:44.962 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:30:45.586 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-02 14:30:45.749 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:30:48.182 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:30:48.183 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:31:00.371 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-02 14:31:00.559 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:31:03.072 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:31:03.072 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:31:04.810 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-02 14:31:05.033 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:31:07.061 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:31:07.061 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:31:07.771 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-02 14:31:07.985 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:31:10.772 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:31:10.773 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:31:11.884 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-02 14:31:12.063 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-02 14:31:14.254 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-02 14:31:14.254 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-02 14:31:16.343 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-02 14:31:16.511 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:31:17.726 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:31:17.729 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:31:17.729 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-05 23:31:18.284 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-05 23:31:19.922 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-05 23:31:20.133 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:37:55.401 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:37:55.404 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:37:55.404 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-05 23:37:56.179 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-05 23:37:57.578 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-05 23:37:57.763 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:00.953 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:00.953 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:06.657 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-05 23:38:06.864 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:10.268 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:10.268 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:12.952 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-05 23:38:13.121 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:20.419 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:20.419 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:21.952 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-05 23:38:22.120 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:24.332 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:24.332 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:26.463 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-05 23:38:26.683 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:28.687 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:28.687 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:31.681 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-05 23:38:31.885 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:34.155 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:34.155 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:35.546 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-05 23:38:35.738 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:38.182 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:38.182 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:39.990 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-05 23:38:40.173 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:42.267 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:42.267 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:44.500 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-05 23:38:44.690 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:46.535 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:46.535 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:53.731 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-05 23:38:53.946 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:56.107 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:56.107 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:38:57.890 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-05 23:38:58.084 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:38:59.944 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:38:59.944 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:02.073 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-05 23:39:02.260 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:05.363 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:05.363 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:07.252 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-05 23:39:07.432 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:10.240 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:10.240 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:11.037 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-05 23:39:11.223 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:13.805 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:13.805 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:14.558 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-05 23:39:14.746 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:16.667 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:16.667 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:18.628 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-05 23:39:18.825 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:20.952 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:20.952 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:22.632 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-05 23:39:22.819 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:25.791 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:25.792 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:27.902 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:39:28.094 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:30.288 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:30.288 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:32.483 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:39:32.678 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:41.569 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:41.570 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:45.849 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:39:46.065 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:50.024 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:50.024 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:52.241 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:39:52.429 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:39:55.546 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:39:55.546 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:39:58.155 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:39:58.348 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:02.869 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:02.870 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:06.272 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:40:06.541 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:16.779 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:16.779 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:18.800 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-05 23:40:18.891 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-05 23:40:19.071 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-05 23:40:19.190 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-05 23:40:19.294 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-05 23:40:19.390 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-05 23:40:20.097 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-05 23:40:20.097 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-05 23:40:20.344 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-05 23:40:20.609 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-05 23:40:20.672 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-05 23:40:20.874 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:23.678 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:23.678 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:24.371 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-05 23:40:24.555 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:29.063 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:29.063 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:31.300 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-05 23:40:31.458 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:34.129 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:34.129 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:35.362 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-05 23:40:35.533 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:40:40.354 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:40:40.354 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:40:51.906 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-05 23:40:52.121 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:41:03.287 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:41:03.287 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:41:07.590 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-05 23:41:07.776 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:41:12.715 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:41:12.716 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:41:13.613 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-05 23:41:13.799 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:41:15.626 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:41:15.626 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:41:16.250 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-05 23:41:16.429 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:41:18.529 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:41:18.530 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:41:20.406 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-05 23:41:20.592 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:45:33.875 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:45:33.877 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:45:33.878 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-05 23:45:34.437 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-05 23:45:35.572 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-05 23:45:35.834 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:45:38.058 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:45:38.059 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:45:43.945 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_002_verifyThankYourConfirmationEmailOnSuccessfulRegistration
+2025-02-05 23:45:44.139 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:45:47.738 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:45:47.738 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:45:50.517 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_003_verifyRegisteringAnAccountproviding_all_fields
+2025-02-05 23:45:50.705 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:45:56.598 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:45:56.598 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:45:58.832 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_004_Verify_proper_notification_messages_with_no_data_in_the_madetory_field
+2025-02-05 23:45:59.083 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:02.183 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:02.183 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:05.314 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_005_Verify_Registering_an_Accountwith_Newsletter_field_As_YES
+2025-02-05 23:46:05.529 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:17.798 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:17.799 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:22.168 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_006_Verify_Registering_an_Accountwith_Newsletter_field_As_NO
+2025-02-05 23:46:22.403 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:24.201 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:24.201 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:26.626 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_007_Verify__diff_ways_to_navigating_to_Register_page
+2025-02-05 23:46:26.890 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:28.820 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:28.820 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:30.596 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_008_Verify_Registering_Account_by_entering_different_passwords_into_Password_and_Password_Confirm_fields
+2025-02-05 23:46:30.838 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:32.667 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:32.668 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:34.414 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_009_Verify_Registering_Account_by_providing_the_existing_account_details
+2025-02-05 23:46:34.690 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:40.629 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:40.630 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:48.810 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_010_Verify_registraton_With_invalidEmail
+2025-02-05 23:46:49.030 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:53.617 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:53.617 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:46:56.180 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-05 23:46:56.432 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:46:58.265 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:46:58.265 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:00.423 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_011Verify_Registering_Account_by_providing_invalid_phone_number
+2025-02-05 23:47:00.690 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:02.919 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:02.919 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:04.900 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_012Verify_Registering_Account_by_using_Keyboard_keys
+2025-02-05 23:47:05.186 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:07.271 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:07.271 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:07.991 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_013Verify_all_fields_in_the_Register_Account_page_have_proper_placeholders
+2025-02-05 23:47:08.234 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:10.978 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:10.978 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:11.578 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_014_Verify_all_mandatory_fields_in_Register_Account
+2025-02-05 23:47:11.815 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:13.749 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:13.749 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:15.263 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_015_Verify_details_that_are_provided_while_Registering_Account_are_stored_in_Database
+2025-02-05 23:47:15.524 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:17.612 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:17.613 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:19.085 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_016_verify_Registering_Account_By_Entering_Only_Spaces
+2025-02-05 23:47:19.301 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:24.729 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:24.729 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:26.272 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:26.422 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:28.644 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:28.645 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:30.509 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:30.673 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:33.544 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:33.545 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:35.404 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:35.576 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:37.516 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:37.516 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:39.338 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:39.664 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:41.831 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:41.831 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:43.459 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:43.608 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:46.517 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:46.519 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:48.495 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_017_Verify_whether_the_Password_fields_in_the_Register_Account_page_are_following_Password_Complexity_Standards
+2025-02-05 23:47:48.654 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:51.458 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:51.458 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:47:52.338 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 1
+2025-02-05 23:47:52.443 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 2 
+2025-02-05 23:47:52.593 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 3 
+2025-02-05 23:47:52.645 [main] INFO  Test_PACK.A_Registration - navifated to edit account page  4 
+2025-02-05 23:47:52.696 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 5 
+2025-02-05 23:47:52.799 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 6 
+2025-02-05 23:47:53.496 [main] INFO  Test_PACK.A_Registration - navifated to edit account page 7
+2025-02-05 23:47:53.497 [main] INFO  Test_PACK.A_Registration - Navigated to account success page
+2025-02-05 23:47:53.733 [main] INFO  Test_PACK.A_Registration - Clicked on continue button
+2025-02-05 23:47:53.997 [main] INFO  Test_PACK.A_Registration - navifated to edit account page
+2025-02-05 23:47:54.050 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_019_Verify_whether_the_leading_and_trailing_spaces_entered_into_the_Register_Account_fields_are_trimmed
+2025-02-05 23:47:54.217 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:47:59.862 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:47:59.863 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:00.704 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_020_Verify_whether_the_Privacy_Policy_checkbox_option_is_not_selected_by_default
+2025-02-05 23:48:00.876 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:06.793 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:06.793 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:08.567 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_021_Verify_Registering_the_Account_without_selecting_the_Privacy_Policy_checkbox_option
+2025-02-05 23:48:08.733 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:10.841 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:10.841 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:11.886 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_022_Verify_the_Password_text_entered_into_the_Password_and_Password_Confirm_field_of_Register_Account_functionality_is_toggled_to_hide_its_visibility
+2025-02-05 23:48:12.058 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:14.486 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:14.487 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:25.614 [main] ERROR Test_PACK.A_Registration - Test failed: TC_RF_023_Verify_navigating_to_other_pages_using_options_or_links_provided_on_the_Register_Account_page
+2025-02-05 23:48:25.812 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:27.570 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:27.570 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:29.017 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_024_Verify_Registring_Account_by_filling_Password_field_and_not_filling_Password_Confirm_field
+2025-02-05 23:48:29.177 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:31.230 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:31.230 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:31.934 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_025_Verify_Breadcrumb_PageHeading_PageURL_PageTitle_of_Register_AccountPage
+2025-02-05 23:48:32.199 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:35.448 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:35.448 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:36.244 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_026_Verify_the_UI_of_Register_Account_page
+2025-02-05 23:48:36.415 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:48:39.403 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-05 23:48:39.404 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-05 23:48:41.119 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-05 23:48:41.330 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-05 23:54:13.040 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:54:14.471 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-05 23:54:14.697 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:00.161 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:01.541 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-05 23:59:01.818 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:09.011 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:10.149 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_002_verifyLoggingIntoApplicationUsingInvalidCredentials
+2025-02-05 23:59:10.403 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:13.065 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:14.132 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_003_verifyLoggingIntoApplicationUsingInvalidEmailAndValidPassword
+2025-02-05 23:59:14.347 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:16.217 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:17.398 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_004_verifyLoggingIntoApplicationUsingValidEmailAndInvalidPassword
+2025-02-05 23:59:17.654 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:21.456 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:22.569 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_005_verifyLoggingIntoApplicationWithoutProvidingAnyCredentials
+2025-02-05 23:59:22.779 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:27.089 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:27.739 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_006_verifyForgottenPasswordOptionIsAvailable
+2025-02-05 23:59:27.991 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:32.068 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:33.430 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_007_verifyLoggingIntoApplicationUsingKeyboardKeys
+2025-02-05 23:59:33.660 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:40.592 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:40.992 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_008_verifyPlaceHoldersOfFieldsInLoginPage
+2025-02-05 23:59:41.246 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:43.936 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:45.332 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_009_verifyBrowsingBackAfterLogin
+2025-02-05 23:59:45.502 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:47.584 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:49.655 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_10verifyBrowsingBackAfterLogout
+2025-02-05 23:59:49.920 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:52.271 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:53.425 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_11_verifyLoggingIntoApplicationUsingInactiveCredentials
+2025-02-05 23:59:53.715 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-05 23:59:55.526 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-05 23:59:56.657 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_12_verify_Number_Of_Unsuccessful_Login_Attemps
+2025-02-05 23:59:56.862 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:00.934 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:01.379 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_013Verify_text_into_Password_field_is_toggled_to_hide_it_svisibility
+2025-02-06 00:00:01.620 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:04.812 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:07.749 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_014_verifyCopyingOfTextEnteredIntoPasswordField
+2025-02-06 00:00:07.945 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:10.415 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:11.574 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_015_Verify_the_Password_is_not_visible_in_the_Page_Source
+2025-02-06 00:00:11.824 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:13.736 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:17.718 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_016_Verify_Logging_into_the_Application_after_changing_the_password
+2025-02-06 00:00:17.984 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:19.986 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:30.150 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_017_Verify_user_is_able_to_navigate_to_different_pages_from_Login_page
+2025-02-06 00:00:30.413 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:32.399 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:33.818 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_018_Verify_the_different_ways_of_navigating_to_the_Login_page
+2025-02-06 00:00:34.074 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:37.391 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:37.859 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_019_Verify_the_Breakcrumb_Page_Heading_Page_Title_and_Page_URL_of_Login_page
+2025-02-06 00:00:38.113 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:40.338 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:41.337 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_20_Verify_the_UI_of_the_Login_page
+2025-02-06 00:00:41.569 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:00:43.970 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-06 00:00:45.355 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_21_Verify_the_Login_page_functionality_in_all_the_supported_environments
+2025-02-06 00:00:45.598 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-06 00:05:39.460 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_001_Verify_Logging_out_by_selecting_Logout_option_from_My_Account_dropmenu
+2025-02-06 00:05:39.690 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:05:47.526 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_002_Verify_Logging_out_by_selecting_Logout_option_from_Right_Column_options
+2025-02-06 00:05:47.785 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:05:51.462 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_003_Verify_the_Application_session_status_after_logging_and_closing_the_Browser_without_logging_out
+2025-02-06 00:05:51.696 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:00.444 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_004_Verify_logging_out_and_browsing_back
+2025-02-06 00:06:00.706 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:05.508 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_005_Verify_Logout_option_is_not_displayed_under_My_Account_menu_before_logging_in
+2025-02-06 00:06:05.774 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:10.211 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_006_Verify_Logout_option_is_not_displayed_under_Right_Column_options_before_logging_in
+2025-02-06 00:06:10.420 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:14.418 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_007_Verify_logout_from_an_Account_from_a_single_place_after_logging_into_it_from_different_places
+2025-02-06 00:06:14.685 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:19.863 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_008_Verify_logging_out_and_logging_in_immediately_after_logout
+2025-02-06 00:06:20.118 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:24.598 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_009_Verify_Account_Logout_page
+2025-02-06 00:06:24.819 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:32.811 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_010_Verify_the_UI_of_the_Logout_option_and_the_Account_Logout_page
+2025-02-06 00:06:33.069 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-06 00:06:37.663 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_LG_011_Verify_the_Logout_functionality_in_all_the_supported_environments
+2025-02-06 00:06:37.895 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 12:45:43.062 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_001_Verify_searching_with_an_existing_Product_Name
+2025-02-08 12:45:43.452 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:01:18.594 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_001_Verify_searching_with_an_existing_Product_Name
+2025-02-08 13:01:18.833 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:09:43.577 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_002_Verify_searching_with_a_non_existing_Product_Name
+2025-02-08 13:09:43.812 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:10:37.371 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_003_Verify_searching_without_providing_any_Product_Name
+2025-02-08 13:10:37.647 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:13:41.474 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_004_Verify_searching_for_a_product_after_login_to_the_Application
+2025-02-08 13:13:41.748 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:15:37.523 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_004_Verify_searching_for_a_product_after_login_to_the_Application
+2025-02-08 13:15:37.776 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:31:43.399 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_004_Verify_searching_for_a_product_after_login_to_the_Application
+2025-02-08 13:31:43.637 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:53:38.134 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_005_Verify_searching_by_providing_a_search_criteria_which_results_in_multiple_products
+2025-02-08 13:53:38.305 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 13:56:56.723 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_005_Verify_searching_by_providing_a_search_criteria_which_results_in_multiple_products
+2025-02-08 13:56:56.900 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:00:04.932 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_005_Verify_searching_by_providing_a_search_criteria_which_results_in_multiple_products
+2025-02-08 14:00:05.114 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:01:19.208 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:01:26.322 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_005_Verify_searching_by_providing_a_search_criteria_which_results_in_multiple_products
+2025-02-08 14:01:26.493 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:09:52.298 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:10:05.356 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_006_Verify_all_fields_in_Search_functionality_and_Search_page_have_placeholders
+2025-02-08 14:10:05.558 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:10:43.426 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:10:50.408 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_006_Verify_all_fields_in_Search_functionality_and_Search_page_have_placeholders
+2025-02-08 14:10:50.659 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:11:21.938 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:11:24.562 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_006_Verify_all_fields_in_Search_functionality_and_Search_page_have_placeholders
+2025-02-08 14:11:24.730 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:16:09.590 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:16:13.209 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_007_Verify_searching_using_Search_Criteria_field
+2025-02-08 14:16:13.449 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:16:22.753 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:16:25.711 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_007_Verify_searching_using_Search_Criteria_field
+2025-02-08 14:16:25.947 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:31:14.365 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:31:18.307 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_008_Verify_Search_using_text_from_product_description
+2025-02-08 14:31:18.562 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:31:38.538 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:31:42.974 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_008_Verify_Search_using_text_from_product_description
+2025-02-08 14:31:43.231 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:33:08.367 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:33:12.317 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_008_Verify_Search_using_text_from_product_description
+2025-02-08 14:33:12.540 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:09.891 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:12.310 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_001_Verify_searching_with_an_existing_Product_Name
+2025-02-08 14:34:12.491 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:12.494 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:15.012 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_002_Verify_searching_with_a_non_existing_Product_Name
+2025-02-08 14:34:15.231 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:15.232 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:18.074 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_003_Verify_searching_without_providing_any_Product_Name
+2025-02-08 14:34:18.310 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:18.310 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:21.292 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_004_Verify_searching_for_a_product_after_login_to_the_Application
+2025-02-08 14:34:21.513 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:21.514 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:28.269 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_005_Verify_searching_by_providing_a_search_criteria_which_results_in_multiple_products
+2025-02-08 14:34:28.478 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:28.478 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:30.778 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_006_Verify_all_fields_in_Search_functionality_and_Search_page_have_placeholders
+2025-02-08 14:34:30.989 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:30.990 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:33.794 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_007_Verify_searching_using_Search_Criteria_field
+2025-02-08 14:34:34.022 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:34.023 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:36.900 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_008_Verify_Search_using_text_from_product_description
+2025-02-08 14:34:37.042 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:37.043 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:39.123 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-08 14:34:39.330 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:39.331 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:41.583 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_010_Verify_Search_by_selecting_to_search_in_subcategories
+2025-02-08 14:34:41.798 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:41.798 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:45.793 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-08 14:34:45.971 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:45.972 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:50.037 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_012_Verify_List_and_Grid_views_when_multiple_Products_are_displayed_in_search_results
+2025-02-08 14:34:50.207 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:50.207 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:34:56.527 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page
+2025-02-08 14:34:56.900 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:34:56.901 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:02.914 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_014_Verify_User_is_able_to_sort_Products_displayed_in_Search_Results
+2025-02-08 14:35:03.306 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:03.308 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:15.510 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_015_Verify_User_can_select_how_many_products_can_be_displayed_in_Search_Results
+2025-02-08 14:35:15.852 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:15.854 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:18.363 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_016_Verify_Search_textbox_and_button_with_search_icon_are_displayed_on_all_pages
+2025-02-08 14:35:18.617 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:18.618 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:21.155 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_017_Verify_navigating_to_Search_page_from_Site_Map_page
+2025-02-08 14:35:21.414 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:21.415 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:26.918 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_018_Verify_Breadcrumb_of_Search_page
+2025-02-08 14:35:27.294 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:27.296 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:29.419 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_019_Verify_we_can_use_all_Search_options_using_Keyboard_keys
+2025-02-08 14:35:29.633 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:29.635 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:31.915 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_020_Verify_Page_Heading_Page_URL_and_Page_Title_of_Search_page
+2025-02-08 14:35:32.161 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:32.162 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:35.986 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_021_Verify_UI_of_Search_functionality_and_Search_page_options
+2025-02-08 14:35:36.328 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:35:36.329 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:35:41.730 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_022_Verify_Search_functionality_in_all_supported_environments
+2025-02-08 14:35:42.080 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-08 14:36:55.451 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-08 14:36:58.760 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_001_Verify_searching_with_an_existing_Product_Name
+2025-02-08 14:36:59.009 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:29:19.833 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:29:28.180 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:29:28.417 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:35:26.171 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:35:41.767 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:35:42.031 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:35:55.913 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:36:11.414 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:36:11.722 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:41:01.098 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:41:08.694 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:41:08.959 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:42:31.627 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:42:36.147 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:42:36.359 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:47:36.949 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:47:43.346 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 11:47:43.611 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 11:56:30.409 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 11:56:36.099 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_010_Verify_Search_by_selecting_to_search_in_subcategories
+2025-02-22 11:56:36.337 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:02:29.565 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:02:47.722 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_010_Verify_Search_by_selecting_to_search_in_subcategories
+2025-02-22 12:02:47.978 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:05:43.290 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:05:58.537 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_010_Verify_Search_by_selecting_to_search_in_subcategories
+2025-02-22 12:05:58.884 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:06:12.115 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:06:17.912 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_010_Verify_Search_by_selecting_to_search_in_subcategories
+2025-02-22 12:06:18.187 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:06:57.165 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:07:02.521 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_009_Verify_Search_by_selecting_category_of_product
+2025-02-22 12:07:02.776 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:20:25.542 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:20:40.727 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-22 12:20:42.502 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 12:26:18.677 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-22 12:26:27.827 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-22 12:26:28.105 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-22 21:53:46.982 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-22 21:53:46.986 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-22 21:53:46.986 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-22 21:53:49.899 [main] INFO  Test_PACK.A_Registration - Starting test : TC_RF_001 
+2025-02-22 21:53:51.288 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_001_verify_Registering_Account_Using_MandatoryFields
+2025-02-22 21:53:51.548 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-22 21:56:40.878 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-22 21:56:40.880 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-22 21:56:40.880 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-22 21:56:43.116 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-22 21:56:43.344 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-22 21:57:05.569 [main] INFO  Test_PACK.A_Registration - WebDriver initialized: true
+2025-02-22 21:57:05.571 [main] INFO  Test_PACK.A_Registration - Browser name: chrome
+2025-02-22 21:57:05.571 [main] WARN  Test_PACK.A_Registration - Browser name not provided, defaulting to Chrome
+2025-02-22 21:57:09.564 [main] INFO  Test_PACK.A_Registration - Test passed: TC_RF_027_Verify_Register_Account_functionality_in_all_the_supported_environments
+2025-02-22 21:57:09.792 [main] INFO  Test_PACK.A_Registration - Driver closed
+2025-02-22 22:12:25.773 [main] INFO  Test_PACK.B_Login - Browser name: chrome
+2025-02-22 22:12:27.473 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:12:27.722 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 22:28:04.638 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:28:04.777 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 22:30:24.004 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:30:24.184 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 22:33:05.062 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:33:05.217 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 22:35:02.388 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:35:02.532 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 22:36:44.389 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 22:36:44.589 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-22 23:03:48.664 [main] ERROR Test_PACK.B_Login - Test failed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-22 23:03:49.081 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-26 14:33:38.212 [main] INFO  Test_PACK.B_Login - Test passed: TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails
+2025-02-26 14:33:38.447 [main] INFO  Test_PACK.B_Login - Driver closed
+2025-02-26 14:44:50.745 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 14:47:09.389 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 14:47:26.251 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 14:47:26.563 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 14:48:04.683 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 14:48:28.274 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 14:48:28.561 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 14:48:42.155 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 14:49:00.069 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 14:49:00.361 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:08:23.836 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:08:49.216 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:08:49.583 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:10:29.168 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:10:41.498 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:10:41.853 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:11:35.510 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:12:02.622 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:12:02.979 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:13:48.652 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:13:56.452 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:13:56.836 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:15:51.666 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:16:02.415 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:16:02.768 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:30:19.497 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:30:27.377 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:30:27.822 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:31:01.095 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:31:11.162 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:31:11.597 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:32:28.521 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:32:33.650 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:32:34.027 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:33:25.831 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:33:34.985 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:33:35.381 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:36:05.373 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:36:12.219 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:36:12.593 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:37:02.206 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:37:08.073 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:37:08.475 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:38:12.797 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:38:18.977 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:38:19.358 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:40:55.188 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:41:03.029 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:41:03.455 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:41:31.337 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:41:52.223 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:41:52.613 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:42:40.557 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:43:36.873 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:43:37.204 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:43:46.928 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:44:41.732 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:45:41.152 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:45:41.485 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:47:41.919 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:47:51.630 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:47:51.961 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:55:27.503 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:55:34.355 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:55:34.779 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:56:38.076 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:56:44.163 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:56:44.586 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-02-26 16:57:05.039 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-02-26 16:57:15.916 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-02-26 16:57:16.302 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-03-01 10:51:39.427 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-03-01 10:51:52.635 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_011_Verify_List_and_Grid_views_when_only_one_Product_is_displayed_in_search_results
+2025-03-01 10:51:52.910 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-03-01 11:07:16.500 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-03-01 11:07:48.556 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page
+2025-03-01 11:07:48.891 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-03-01 11:08:28.239 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-03-01 11:08:56.596 [main] ERROR Test_PACK.C_LogOut - Test failed: TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page
+2025-03-01 11:08:56.951 [main] INFO  Test_PACK.C_LogOut - Driver closed
+2025-03-01 11:10:10.164 [main] INFO  Test_PACK.C_LogOut - Test Excecution Stated
+2025-03-01 11:10:14.745 [main] INFO  Test_PACK.C_LogOut - Test passed: TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page
+2025-03-01 11:10:15.110 [main] INFO  Test_PACK.C_LogOut - Driver closed

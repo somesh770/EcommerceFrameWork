@@ -1,0 +1,58 @@
+{
+  "methods": [
+    {
+      "index": 0,
+      "retryCount": null,
+      "type": "config",
+      "args": [],
+      "metaData": {
+        "resultFileName": "Setup",
+        "name": "setup",
+        "groups": [],
+        "description": ""
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1740245459595,
+      "duration": 92975,
+      "result": "fail",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "resultFileName": "TC_LF_001_verifyLoggingIntoApplicationUsingVa",
+        "name": "TC_LF_001_verifyLoggingIntoApplicationUsingValidCredentails",
+        "groups": [],
+        "description": ""
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1740245552608,
+      "duration": 0,
+      "result": "skip",
+      "passPer": 0.0
+    },
+    {
+      "index": 0,
+      "retryCount": null,
+      "type": "config",
+      "args": [],
+      "metaData": {
+        "resultFileName": "TearDown",
+        "name": "tearDown",
+        "groups": [],
+        "description": ""
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1740245552627,
+      "duration": 0,
+      "result": "skip",
+      "passPer": 0.0
+    }
+  ]
+}

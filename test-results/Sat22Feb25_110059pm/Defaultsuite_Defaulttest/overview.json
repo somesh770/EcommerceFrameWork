@@ -1,0 +1,32 @@
+{
+  "total": 1,
+  "pass": 0,
+  "fail": 0,
+  "skip": 1,
+  "classes": [
+    "Test_PACK.B_Login"
+  ],
+  "envInfo": {
+    "browser-desired-capabilities": null,
+    "browser-actual-capabilities": {},
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "0",
+      "qaf-Build-Time": "26-Jul-2020 22:16:34",
+      "qaf-Version": "3.0"
+    },
+    "run-parameters": {},
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Eclipse Adoptium",
+      "java.version": "23",
+      "os.arch": "amd64",
+      "host": "SomeshPC",
+      "os.name": "Windows 11",
+      "user.name": "somesh",
+      "os.version": "10.0"
+    }
+  },
+  "startTime": 1740245459550,
+  "endTime": 1740245552642
+}

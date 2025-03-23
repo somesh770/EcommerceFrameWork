@@ -6,8 +6,8 @@
       <class name="Test_PACK.D_Search">
         <methods>
           <include name="TearDown"/>
+          <include name="TC_SF_013_Verify_navigating_to_Product_Compare_Page_from_Search_Results_page"/>
           <include name="setup"/>
-          <include name="TC_SF_001_Verify_searching_with_an_existing_Product_Name"/>
         </methods>
       </class> <!-- Test_PACK.D_Search -->
     </classes>

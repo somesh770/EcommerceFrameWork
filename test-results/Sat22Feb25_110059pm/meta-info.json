@@ -1,0 +1,13 @@
+{
+  "name": "Default suite",
+  "status": "unstable",
+  "tests": [
+    "Defaultsuite_Defaulttest"
+  ],
+  "total": 1,
+  "pass": 0,
+  "fail": 0,
+  "skip": 1,
+  "startTime": 1740245459416,
+  "endTime": 1740245552699
+}
